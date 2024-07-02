@@ -1,0 +1,9 @@
+<header>
+    <ul class="row">
+        <li v-for="navItem in areaList" class="col mainNavItem">
+            <RouterLink :to=navItem.txtKey class="text-decoration-none">
+                {{navItem.title}}
+            </RouterLink>           
+        </li>
+    </ul>    
+</header>
