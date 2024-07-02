@@ -1,0 +1,21 @@
+header {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    min-height: 4rem;
+    max-height: 4rem;
+    padding: 1.5rem 2rem;
+    text-transform: uppercase;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
+    &:hover {
+        color: rgb(9, 182, 159);
+    }    
+}

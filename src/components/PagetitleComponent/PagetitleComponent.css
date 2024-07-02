@@ -1,0 +1,16 @@
+.pageTitle {
+    position: absolute;
+    top: 4.5rem;
+    /* left: .5rem; */
+    max-width: 15vw;
+    font-size: 1.5rem;
+    padding: 1rem 2rem 1rem 1rem;
+    background-color: rgb(25, 25, 25);
+    /* color: rgb(9, 182, 159); */
+    color: white;
+    border-radius: 0 .2rem 3rem 0;
+    text-transform: uppercase;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
+}
