@@ -1,4 +1,4 @@
-# itd
+# itdata
 
 ## Project setup
 ```
