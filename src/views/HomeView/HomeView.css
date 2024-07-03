@@ -1,0 +1,27 @@
+.homeNav {
+    width: 90%;
+    border-radius: 1rem;
+    /* background-color: rgb(228, 228, 228); */
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
+    text-align: left;
+}
+
+.homeNav h3 {
+    background-color: rgb(25, 25, 25);
+    border-radius: 10px .2rem 3rem 10px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.homeNav li {
+    margin-top: .8rem; }
+
+.homeNav a {
+    text-decoration: none;
+    color: rgb(25, 25, 25); }

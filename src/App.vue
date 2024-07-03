@@ -14,12 +14,17 @@
       return {
         areaList: [
           {id: 0, title: "Главная", txtKey: "/"},
-          {id: 1, title: "1C-Bitrix", txtKey: "bitrix"},
-          {id: 2, title: "HTML", txtKey: "html"},
-          {id: 3, title: "JS", txtKey: "javascript"},
-          {id: 4, title: "TS", txtKey: "typescript"},
-          {id: 5, title: "CSS", txtKey: "css"},
-          {id: 6, title: "JS-фреймворки", txtKey: "js-frameworks"},
+          {id: 1, title: "О сайте", txtKey: "about", subarea: []},
+          {id: 2, title: "1C-Bitrix", txtKey: "bitrix", subarea: []},
+          {id: 3, title: "HTML", txtKey: "html", subarea: []},
+          {id: 4, title: "JS", txtKey: "javascript", subarea: []},
+          {id: 5, title: "TS", txtKey: "typescript", subarea: []},
+          {id: 6, title: "CSS", txtKey: "css", subarea: []},
+          {id: 7, title: "JS-фреймворки", txtKey: "js-frameworks", subarea: [
+            {title: "Angular", txtKey: "js-frameworks/angular"},
+            {title: "React", txtKey: "js-frameworks/react"},
+            {title: "Vue", txtKey: "js-frameworks/vue"},
+          ]},
         ]
       }
     },

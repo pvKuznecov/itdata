@@ -7,6 +7,7 @@ import JSView from '../views/JSView/JSView.vue'
 import TSView from '../views/TSView/TSView.vue'
 import CssView from '../views/CssView/CssView.vue'
 import JsframeworksView from '../views/JsframeworksView/JsframeworksView.vue'
+import NotfoundView from '../views/NotfoundView/NotfoundView.vue'
 
 const routes = [
   {
@@ -52,6 +53,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     // component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    component: NotfoundView
+    // component: () => import('../apps/AppNotfound/AppNotfound.vue')
   }
 ]
 
