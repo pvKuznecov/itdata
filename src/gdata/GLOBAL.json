@@ -1,0 +1,19 @@
+{
+    "GLOBAL": {
+        "areaList": [
+            { "id": 0, "title": "Главная", "txtKey": "/" },
+            { "id": 1, "title": "О сайте", "txtKey": "about", "subarea": [] },
+            { "id": 2, "title": "1C-Bitrix", "txtKey": "bitrix", "subarea": [] },
+            { "id": 3, "title": "HTML", "txtKey": "html", "subarea": [] },
+            { "id": 4, "title": "JS", "txtKey": "javascript", "subarea": [] },
+            { "id": 5, "title": "TS", "txtKey": "typescript", "subarea": [] },
+            { "id": 6, "title": "CSS", "txtKey": "css", "subarea": []},
+            { "id": 7, "title": "JS-фреймворки", "txtKey": "js-frameworks", "subarea": [
+              { "title": "Angular", "txtKey": "js-frameworks/angular" },
+              { "title": "React", "txtKey": "js-frameworks/react" },
+              { "title": "Vue", "txtKey": "js-frameworks/vue" }
+            ]},
+            { "id": 8, "title": "Racket", "txtKey": "racket", "subarea": [] }
+        ]
+    }
+}
