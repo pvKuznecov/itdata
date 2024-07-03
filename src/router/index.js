@@ -8,6 +8,10 @@ import TSView from '../views/TSView/TSView.vue'
 import CssView from '../views/CssView/CssView.vue'
 import JsframeworksView from '../views/JsframeworksView/JsframeworksView.vue'
 import NotfoundView from '../views/NotfoundView/NotfoundView.vue'
+import AngularView from '../views/AngularView/AngularView.vue'
+import ReactView from '../views/ReactView/ReactView.vue'
+import VueView from '../views/VueView/VueView.vue'
+import RacketView from '../views/RacketView/RacketView.vue'
 
 const routes = [
   {
@@ -44,6 +48,26 @@ const routes = [
     path: '/js-frameworks',
     name: 'js-frameworks',
     component: JsframeworksView
+  },
+  {
+    path: '/js-frameworks/angular',
+    name: 'js-frameworks/angular',
+    component: AngularView
+  },
+  {
+    path: '/js-frameworks/react',
+    name: 'js-frameworks/react',
+    component: ReactView
+  },
+  {
+    path: '/js-frameworks/vue',
+    name: 'js-frameworks/vue',
+    component: VueView
+  },
+  {
+    path: '/racket',
+    name: 'racket',
+    component: RacketView
   },
   {
     path: '/about',
