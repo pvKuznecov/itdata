@@ -1,11 +1,16 @@
-<main>
-    <PagetitleComponent :titleName="areaName"/>
-    <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-      </nav>
-    <div class="home">
-        <img alt="Vue logo" src="@/assets/logo.png">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
+<PagetitleComponent :titleName="areaName"/>
+<main>    
+    <div class="homeNav">
+        <h3>Разделы</h3>
+        <ul>
+            <li v-for="arItem in areasList">
+                <router-link :to=arItem.txtKey>{{arItem.title}}</router-link>
+                <ul v-if="arItem.subarea">
+                    <li v-for="arSubItem in arItem.subarea">
+                        <router-link :to=arSubItem.txtKey>{{arSubItem.title}}</router-link>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </main>

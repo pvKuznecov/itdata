@@ -7,7 +7,7 @@
     name: "AboutView",
     data() {
       return {
-        areaName: "О проекте"
+        areaName: "О сайте",
       }
     },
     components: {
