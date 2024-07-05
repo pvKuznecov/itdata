@@ -27,7 +27,7 @@
             },
             {
                 "id": 6, "title": "CSS", "txtKey": "css", "subarea": [],
-                "descriptionTxt": ""
+                "descriptionTxt": "CSS"
             },
             {
                 "id": 7, "title": "JS-фреймворки", "txtKey": "js-frameworks",
@@ -40,7 +40,7 @@
             },
             {
                 "id": 8, "title": "Racket", "txtKey": "racket", "subarea": [],
-                "descriptionTxt": ""
+                "descriptionTxt": "Racket"
             }
         ]
     }
