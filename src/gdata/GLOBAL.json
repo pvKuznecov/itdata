@@ -23,18 +23,27 @@
             },
             {
                 "id": 5, "title": "TS", "txtKey": "typescript", "subarea": [],
-                "descriptionTxt": ""
+                "descriptionTxt": "TypeScript — язык программирования, представленный Microsoft в 2012 году. Он позиционируется как средство разработки веб-приложений, расширяющее возможности JavaScript.\nОсобенности языка:\n— возможность явного статического назначения типов;\n— поддержка использования полноценных классов (как в традиционных объектно-ориентированных языках);\n— поддержка подключения модулей.\nTypeScript является обратно совместимым с JavaScript и компилируется в последний. После компиляции программу на TypeScript можно выполнять в любом современном браузере или использовать совместно с серверной платформой Node.js."
             },
             {
                 "id": 6, "title": "CSS", "txtKey": "css", "subarea": [],
-                "descriptionTxt": "CSS"
+                "descriptionTxt": "CSS (cascading style sheets, каскадные таблицы стилей) — это язык, который используют, чтобы задать визуальное отображение веб-страницам.\nCSS работает в связке с языком разметки HTML. С его помощью можно:\n- менять цвет и начертание текста,\n- задавать шрифт,\n- раскрашивать кнопки,\n- добавлять к отдельным элементам фон или поля и т.п.\nCSS позволяет разработчикам:\n- сделать веб-страницу привлекательнее,\n- добиться единообразия дизайна на сайте,\n- быстро менять оформление страниц,\n- улучшить адаптивность страниц."
             },
             {
                 "id": 7, "title": "JS-фреймворки", "txtKey": "js-frameworks",
                 "subarea": [
-                    { "title": "Angular", "txtKey": "js-frameworks/angular" },
-                    { "title": "React", "txtKey": "js-frameworks/react" },
-                    { "title": "Vue", "txtKey": "js-frameworks/vue" }
+                    {
+                        "title": "Angular", "txtKey": "js-frameworks/angular", "subarea": [],
+                        "descriptionTxt": ""
+                    },
+                    {
+                        "title": "React", "txtKey": "js-frameworks/react", "subarea": [],
+                        "descriptionTxt": ""
+                    },
+                    {
+                        "title": "Vue", "txtKey": "js-frameworks/vue", "subarea": [],
+                        "descriptionTxt": ""
+                    }
                 ],
                 "descriptionTxt": ""
             },
