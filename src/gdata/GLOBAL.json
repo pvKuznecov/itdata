@@ -39,7 +39,8 @@
                 "descriptionTxt": ""
             },
             {
-                "id": 8, "title": "Racket", "txtKey": "racket", "subarea": []
+                "id": 8, "title": "Racket", "txtKey": "racket", "subarea": [],
+                "descriptionTxt": ""
             }
         ]
     }
