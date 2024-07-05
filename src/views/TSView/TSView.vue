@@ -5,7 +5,7 @@
         name: "TSView",
         data() {
             return {
-                areaName: "TypeScript"
+                areaName: "TypeScript",
             }
         },
     }

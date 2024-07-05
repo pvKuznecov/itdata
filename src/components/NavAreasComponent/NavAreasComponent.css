@@ -1,0 +1,37 @@
+.nav_areas {
+    width: 90%;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
+    text-align: left;
+}
+
+.nav_areas h3 {
+    background-color: rgb(25, 25, 25);
+    border-radius: 10px .2rem 3rem 10px;
+    color: white;
+    padding: 5px 10px; }
+
+.nav_areas li {
+    margin-top: .8rem;
+    &:hover {
+        color: rgb(9, 182, 159);
+    }
+ }
+
+.nav_areas a {
+    text-decoration: none;
+    color: rgb(25, 25, 25); }
+
+.nav_areas_desc {
+    /* text-align: right; */
+    padding: 1rem 2rem;
+    border-left: 1px solid grey;
+    font-size: .9rem;
+    line-height: .8rem;
+}

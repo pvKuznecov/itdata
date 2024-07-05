@@ -1,9 +1,8 @@
 <style src="./HomeView.css"></style>
 <template src="./HomeView.html"></template>
 <script>
-  // @ is an alias to /src
-  // import HelloWorld from '@/components/HelloWorld.vue'
-
+  import NavAreasComponent from '@/components/NavAreasComponent/NavAreasComponent.vue'
+  
   export default {
     name: 'HomeView',
     data() {
@@ -11,15 +10,8 @@
         areaName: "Главная"
       }
     },
-    inject: ["areaList"],
-    computed: {
-      areasList() {
-        let n_areaList = [];
-        for (let i=2; i<this.areaList.length; i++) {
-          n_areaList[i-2] = this.areaList[i]; 
-        }
-        return n_areaList;
-      }
+    components: {
+      NavAreasComponent
     },
   }
 </script>

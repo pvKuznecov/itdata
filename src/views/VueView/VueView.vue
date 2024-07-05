@@ -5,7 +5,7 @@
         name: "VueView",
         data() {
             return {
-                areaName: "Vue"
+                areaName: "Vue",
             }
         },
     }
