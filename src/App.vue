@@ -19,7 +19,7 @@
     },
     provide() {
       return {
-        areaList: this.areaList
+        areaList: this.areaList,
       }
     }
   }

@@ -1,16 +1,4 @@
 <PagetitleComponent :titleName="areaName"/>
 <main>    
-    <div class="homeNav">
-        <h3>Разделы</h3>
-        <ul>
-            <li v-for="arItem in areasList">
-                <router-link :to=arItem.txtKey>{{arItem.title}}</router-link>
-                <ul v-if="arItem.subarea">
-                    <li v-for="arSubItem in arItem.subarea">
-                        <router-link :to=arSubItem.txtKey>{{arSubItem.title}}</router-link>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <NavAreasComponent/>
 </main>

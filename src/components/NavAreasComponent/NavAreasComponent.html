@@ -1,0 +1,21 @@
+<div class="nav_areas">
+    <h3>Разделы</h3>
+    <div class="row">
+        <div class="col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 nav_areas_menu">
+            <ul>
+                <li v-for="arItem in areasList" @mouseover="upHere = true; showDiscArea(arItem.descriptionTxt)">
+                    <router-link :to=arItem.txtKey>{{arItem.title}}</router-link>
+                    <ul v-if="arItem.subarea">
+                        <li v-for="arSubItem in arItem.subarea" @mouseover="upHere = true; showDiscArea(arSubItem.descriptionTxt)">
+                            <router-link :to=arSubItem.txtKey>{{arSubItem.title}}</router-link>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div v-show="upHere" class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 nav_areas_desc">
+            <p v-for="disItem in prepareTxt(discTxt)">{{disItem}}</p>
+            <!-- <p v-for="disItem in discTxt.split('\n',)">{{disItem}}</p> -->
+        </div>
+    </div>
+</div>

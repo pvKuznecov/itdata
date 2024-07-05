@@ -1,19 +1,46 @@
 {
     "GLOBAL": {
         "areaList": [
-            { "id": 0, "title": "Главная", "txtKey": "/" },
-            { "id": 1, "title": "О сайте", "txtKey": "about", "subarea": [] },
-            { "id": 2, "title": "1C-Bitrix", "txtKey": "bitrix", "subarea": [] },
-            { "id": 3, "title": "HTML", "txtKey": "html", "subarea": [] },
-            { "id": 4, "title": "JS", "txtKey": "javascript", "subarea": [] },
-            { "id": 5, "title": "TS", "txtKey": "typescript", "subarea": [] },
-            { "id": 6, "title": "CSS", "txtKey": "css", "subarea": []},
-            { "id": 7, "title": "JS-фреймворки", "txtKey": "js-frameworks", "subarea": [
-              { "title": "Angular", "txtKey": "js-frameworks/angular" },
-              { "title": "React", "txtKey": "js-frameworks/react" },
-              { "title": "Vue", "txtKey": "js-frameworks/vue" }
-            ]},
-            { "id": 8, "title": "Racket", "txtKey": "racket", "subarea": [] }
+            {
+                "id": 0, "title": "Главная", "txtKey": "/", "subarea": [],
+                "descriptionTxt": ""
+            },
+            {
+                "id": 1, "title": "О сайте", "txtKey": "about", "subarea": [],
+                "descriptionTxt": ""
+            },
+            {
+                "id": 2, "title": "1C-Bitrix", "txtKey": "bitrix", "subarea": [],
+                "descriptionTxt": "«Битрикс24» — российский сервис для управления бизнесом. Он включает в себя:\n- CRM;\n- менеджер задач;\n- корпоративную социальную сеть;\n- чаты;\n- конструктор сайтов;\n- конструктор интернет-магазинов;\n- облачное хранилище и онлайн-документы;\n- календарь;\n- бизнес-процессы;\n- учёт рабочего времени;\n- сквозную аналитику;\n- мобильное приложение;\n- аудио/видеозвонки и видеоконференции в HD;\n- генератор документов и отчётов;\n- структуру компании.\nСервис разработан на базе PHP. Существует облачная версия и версия для установки на собственный сервер с возможностью кастомизации."
+            },
+            {
+                "id": 3, "title": "HTML", "txtKey": "html", "subarea": [],
+                "descriptionTxt": "HTML (HyperText Markup Language) — это язык гипертекстовой разметки.\nОсновная цель HTML — структурировать и оформлять контент на сайте. Он создаёт иерархическую структуру веб-страницы, используя заголовки, абзацы, списки и таблицы. Такая структура помогает пользователю легче ориентироваться на сайте.\nС помощью HTML можно:\n- делать текстовую разметку,\n- встраивать медиа,\n- создавать ссылки и навигацию,\n- создавать таблицы,\n- создавать формы."
+            },
+            {
+                "id": 4, "title": "JS", "txtKey": "javascript", "subarea": [],
+                "descriptionTxt": "JavaScript — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией спецификации ECMAScript (стандарт ECMA-262).\nОсновные архитектурные черты:\n- динамическая типизация;\n- слабая типизация;\n- автоматическое управление памятью;\n- прототипное программирование;\n- функции как объекты первого класса.\n\nJavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений. Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам."
+            },
+            {
+                "id": 5, "title": "TS", "txtKey": "typescript", "subarea": [],
+                "descriptionTxt": ""
+            },
+            {
+                "id": 6, "title": "CSS", "txtKey": "css", "subarea": [],
+                "descriptionTxt": ""
+            },
+            {
+                "id": 7, "title": "JS-фреймворки", "txtKey": "js-frameworks",
+                "subarea": [
+                    { "title": "Angular", "txtKey": "js-frameworks/angular" },
+                    { "title": "React", "txtKey": "js-frameworks/react" },
+                    { "title": "Vue", "txtKey": "js-frameworks/vue" }
+                ],
+                "descriptionTxt": ""
+            },
+            {
+                "id": 8, "title": "Racket", "txtKey": "racket", "subarea": []
+            }
         ]
     }
 }
