@@ -34,18 +34,18 @@
                 "subarea": [
                     {
                         "title": "Angular", "txtKey": "js-frameworks/angular", "subarea": [],
-                        "descriptionTxt": ""
+                        "descriptionTxt": "Angular — открытая и свободная платформа для разработки веб-приложений, написанная на языке TypeScript, разрабатываемая командой из компании Google, а также сообществом разработчиков из различных компаний. Angular — полностью переписанный фреймворк от той же команды, которая написала AngularJS."
                     },
                     {
                         "title": "React", "txtKey": "js-frameworks/react", "subarea": [],
-                        "descriptionTxt": ""
+                        "descriptionTxt": "React"
                     },
                     {
                         "title": "Vue", "txtKey": "js-frameworks/vue", "subarea": [],
-                        "descriptionTxt": ""
+                        "descriptionTxt": "Vue"
                     }
                 ],
-                "descriptionTxt": ""
+                "descriptionTxt": "JavaScript-фреймворк — это фреймворк для приложений, написанный на языке программирования JavaScript. JavaScript-фреймворк отличается от Javascript-библиотеки потоком управления. Библиотека содержит функции для вызова родительским кодом, а фреймворк опирается на структуру приложения в целом."
             },
             {
                 "id": 8, "title": "Racket", "txtKey": "racket", "subarea": [],
