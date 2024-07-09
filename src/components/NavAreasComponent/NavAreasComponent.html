@@ -6,16 +6,16 @@
                 <li v-for="arItem in areasList" @mouseover="upHere = true; showDiscArea(arItem.descriptionTxt)">
                     <router-link :to=arItem.txtKey>{{arItem.title}}</router-link>
                     <ul v-if="arItem.subarea">
-                        <li v-for="arSubItem in arItem.subarea" @mouseover="upHere = true; showDiscArea(arSubItem.descriptionTxt)">
+                        <li v-for="arSubItem in arItem.subarea" @mouseover="upHereTo = true; showDiscArea(arSubItem.descriptionTxt)">
                             <router-link :to=arSubItem.txtKey>{{arSubItem.title}}</router-link>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <div v-show="upHere" class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 nav_areas_desc">
+        <div v-show="upHere" id="tet" class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 nav_areas_desc">
+            <!-- <p v-for="disItem in prepareTxt(discTxt)">{{addhtmlTxtPart("div", disItem)}}</p> -->
             <p v-for="disItem in prepareTxt(discTxt)">{{disItem}}</p>
-            <!-- <p v-for="disItem in discTxt.split('\n',)">{{disItem}}</p> -->
         </div>
     </div>
 </div>
