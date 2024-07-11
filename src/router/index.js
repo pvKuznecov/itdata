@@ -10,7 +10,7 @@ import JsframeworksView from '../views/JsframeworksView/JsframeworksView.vue'
 import NotfoundView from '../views/NotfoundView/NotfoundView.vue'
 import AngularView from '../views/AngularView/AngularView.vue'
 import ReactView from '../views/ReactView/ReactView.vue'
-import VueView from '../views/VueView/VueView.vue'
+import Vue3View from '../views/Vue3View/Vue3View.vue'
 import RacketView from '../views/RacketView/RacketView.vue'
 
 const routes = [
@@ -50,19 +50,19 @@ const routes = [
     component: JsframeworksView
   },
   {
-    path: '/js-frameworks/angular',
-    name: 'js-frameworks/angular',
+    path: '/angular',
+    name: 'angular',
     component: AngularView
   },
   {
-    path: '/js-frameworks/react',
-    name: 'js-frameworks/react',
+    path: '/react',
+    name: 'react',
     component: ReactView
   },
   {
-    path: '/js-frameworks/vue',
-    name: 'js-frameworks/vue',
-    component: VueView
+    path: '/vue3',
+    name: 'vue3',
+    component: Vue3View
   },
   {
     path: '/racket',

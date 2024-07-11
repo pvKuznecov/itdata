@@ -30,6 +30,9 @@ main {
     font-size: .7rem !important;
     margin-top: 5px;
   }
+  .nav_areas_desc {
+    visibility: hidden;
+  }
   .pageTitle {
     visibility: hidden;
   }

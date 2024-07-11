@@ -33,15 +33,15 @@
                 "id": 7, "title": "JS-фреймворки", "txtKey": "js-frameworks",
                 "subarea": [
                     {
-                        "title": "Angular", "txtKey": "js-frameworks/angular", "subarea": [],
+                        "title": "Angular", "txtKey": "angular", "subarea": [],
                         "descriptionTxt": ""
                     },
                     {
-                        "title": "React", "txtKey": "js-frameworks/react", "subarea": [],
+                        "title": "React", "txtKey": "react", "subarea": [],
                         "descriptionTxt": ""
                     },
                     {
-                        "title": "Vue", "txtKey": "js-frameworks/vue", "subarea": [],
+                        "title": "Vue 3", "txtKey": "vue3", "subarea": [],
                         "descriptionTxt": ""
                     }
                 ],
@@ -51,6 +51,97 @@
                 "id": 8, "title": "Racket", "txtKey": "racket", "subarea": [],
                 "descriptionTxt": "Racket"
             }
-        ]
+        ],
+        "bitrix": {
+            "title": "1C-Bitrix",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://www.bitrix24.ru/"}
+            ],
+            "logo": "",
+            "description": [
+
+            ]
+        },
+        "html": {
+            "title": "HTML",
+            "links": [
+                {"title": "w3.org", "link": "https://www.w3.org/html/"}
+            ],
+            "logo": "",
+            "description": [
+
+            ]
+        },
+        "js": {
+            "title": "JavaScript",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://ecma-international.org/publications-and-standards/standards/ecma-262/"}
+            ],
+            "logo": "https://logodix.com/logo/374704.png",
+            "description": [
+
+            ]
+        },
+        "ts": {
+            "title": "TypeScript",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://www.typescriptlang.org/"}
+            ],
+            "logo": "",
+            "description": [
+
+            ]
+        },
+        "css": {
+            "title": "CSS",
+            "links": [
+                {"title": "w3.org/Style/CSS/", "link": "https://www.w3.org/Style/CSS/"},
+                {"title": "drafts.csswg.org", "link": "https://drafts.csswg.org/"}
+            ],
+            "logo": "",
+            "description": [
+
+            ]
+        },
+        "angular": {
+            "title": "Angular",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://angular.dev/"}
+            ],
+            "logo": "",
+            "description": [
+
+            ]
+        },
+        "react": {
+            "title": "React",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://ru.react.js.org/"}
+            ],
+            "logo": "https://logodix.com/logo/1658345.png",
+            "description": [
+
+            ]
+        },
+        "vue3": {
+            "title": "Vue 3",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://v3.ru.vuejs.org/ru/"}
+            ],
+            "logo": "https://v3.ru.vuejs.org/logo.png",
+            "description": [
+                "Vue (произносится /vjuː/, примерно как view) - это прогрессивный фреймворк для создания пользовательских интерфейсов. В отличие от фреймворков-монолитов, Vue создавался пригодным для постепенного внедрения. Его ядро в первую очередь решает задачи уровня представления (view), упрощая интеграцию с другими библиотеками и существующими проектами. С другой стороны, Vue полностью подходит и для разработки сложных одностраничных приложений (SPA, Single-Page Applications), если использовать его в комбинации с современными инструментами и дополнительными библиотеками."
+            ]
+        },
+        "racket": {
+            "title": "Racket",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://racket-lang.org/"}
+            ],
+            "logo": "https://racket-lang.org/img/racket-logo.svg",
+            "description": [
+
+            ]
+        }
     }
 }
