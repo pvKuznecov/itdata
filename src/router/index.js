@@ -12,6 +12,7 @@ import AngularView from '../views/AngularView/AngularView.vue'
 import ReactView from '../views/ReactView/ReactView.vue'
 import Vue3View from '../views/Vue3View/Vue3View.vue'
 import RacketView from '../views/RacketView/RacketView.vue'
+import LinuxView from '../views/LinuxView/LinuxView.vue'
 
 const routes = [
   {
@@ -68,6 +69,11 @@ const routes = [
     path: '/racket',
     name: 'racket',
     component: RacketView
+  },
+  {
+    path: '/linux',
+    name: 'linux',
+    component: LinuxView
   },
   {
     path: '/about',
