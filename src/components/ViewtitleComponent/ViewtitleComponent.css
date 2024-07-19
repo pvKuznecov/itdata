@@ -20,25 +20,22 @@
     /* color: white; */
     color: rgb(25, 25, 25);
     padding: 1rem 1.2rem;
-    border-radius: 1.2rem;
-    /* -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.54);  */
-}
+    border-radius: 1.2rem; }
   
-  .view_titleBlock_links h3 {
-    background-color: rgb(25, 25, 25);
-    border-radius: 10px .2rem 3rem 10px;
-    color: white;
-    padding: 1rem 1.2rem; }
+.view_titleBlock_links h3 {
+  background-color: rgb(25, 25, 25);
+  border-radius: 10px .2rem 3rem 10px;
+  color: white;
+  padding: 1rem 1.2rem; }
   
-  .view_titleBlock_links li {
-    list-style-type: none; }
+/* .view_titleBlock_links li {
+  list-style-type: none; } */
   
-  .view_titleBlock_links a {
-    color: rgb(25, 25, 25);
-    text-decoration: none;
-    &:hover {
-      color: rgb(9, 182, 159);
+.view_titleBlock_links a {
+  color: rgb(25, 25, 25);
+  text-decoration: none;
+  font-size: 12px;
+  &:hover {
+    color: rgb(9, 182, 159);
     }
   }
