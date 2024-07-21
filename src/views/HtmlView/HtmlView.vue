@@ -11,6 +11,9 @@
             AGDATA: function () {
                 return this.GDATA.html;
             },
+            COLORDATA: function () {
+                return this.GDATA.colors;
+            },
         }
     }
 </script>
