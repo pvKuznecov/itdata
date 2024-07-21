@@ -33,24 +33,313 @@
                 "id": 7, "title": "JS-фреймворки", "txtKey": "js-frameworks",
                 "subarea": [
                     {
-                        "title": "Angular", "txtKey": "js-frameworks/angular", "subarea": [],
-                        "descriptionTxt": "Angular — открытая и свободная платформа для разработки веб-приложений, написанная на языке TypeScript, разрабатываемая командой из компании Google, а также сообществом разработчиков из различных компаний. Angular — полностью переписанный фреймворк от той же команды, которая написала AngularJS."
+                        "title": "Angular", "txtKey": "angular", "subarea": [],
+                        "descriptionTxt": ""
                     },
                     {
-                        "title": "React", "txtKey": "js-frameworks/react", "subarea": [],
-                        "descriptionTxt": "React"
+                        "title": "React", "txtKey": "react", "subarea": [],
+                        "descriptionTxt": ""
                     },
                     {
-                        "title": "Vue", "txtKey": "js-frameworks/vue", "subarea": [],
-                        "descriptionTxt": "Vue"
+                        "title": "Vue 3", "txtKey": "vue3", "subarea": [],
+                        "descriptionTxt": ""
                     }
                 ],
-                "descriptionTxt": "JavaScript-фреймворк — это фреймворк для приложений, написанный на языке программирования JavaScript. JavaScript-фреймворк отличается от Javascript-библиотеки потоком управления. Библиотека содержит функции для вызова родительским кодом, а фреймворк опирается на структуру приложения в целом."
+                "descriptionTxt": "Фреймворк для приложений, написанный на языке программирования JavaScript.\nОн отличается от Javascript-библиотеки потоком управления:\n- Библиотека содержит функции для вызова родительским кодом, а фреймворк опирается на структуру приложения в целом.\n- Разработчик не вызывает код фреймворка, напротив, фреймворк вызывает и пользуется кодом разработчика.\nНекоторые JavaScript-фреймворки используют принцип MVC (model-view-controller), созданный для отделения частей веб-приложения с целью улучшения и расширяемости кода.\nПримеры JavaScript-фреймворков:\n- AngularJS,\n- Vue.js\n- и др."
             },
             {
                 "id": 8, "title": "Racket", "txtKey": "racket", "subarea": [],
-                "descriptionTxt": "<b>Racket</b> — мультипарадигменный язык программирования общего назначения, принадлежащий семейству Lisp/Scheme. Предоставляет среду языково-ориентированное программирование — одно из предназначений racket — создание, разработка и реализация языков программирования."
+                "descriptionTxt": "Racket"
+            },
+            {
+                "id": 9, "title": "Linux", "txtKey": "linux", "subarea": [],
+                "descriptionTxt": "Linux"
             }
-        ]
+        ],
+        "bitrix": {
+            "title": "1C-Bitrix",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://www.bitrix24.ru/"}
+            ],
+            "logo": "https://upload.wikimedia.org/wikipedia/ru/5/5c/1c-bitrix_logo.png",
+            "description": [
+                "1С-Битрикс: Управление сайтом — система управления контентом веб-проекта (CMS) от российской компании «Битрикс».",
+                "«1С-Битрикс: Управление сайтом» позволяет создавать: интернет-магазины, корпоративные сайты, информационные порталы, страницы сообществ, форумы, рекламные лендинги.",
+                "«1С-Битрикс: Управление сайтом» также включает набор инструментов для продвижения веб-проектов."
+            ]
+        },
+        "html": {
+            "title": "HTML",
+            "links": [
+                {"title": "w3.org", "link": "https://www.w3.org/html/"}
+            ],
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1280px-HTML5_logo_and_wordmark.svg.png",
+            "description": [
+                "HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык гипертекстовой разметки документов для просмотра веб-страниц в браузере. Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS или открывают с локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране монитора.",
+                "Элементы HTML являются строительными блоками HTML страниц. С помощью HTML разные конструкции, изображения и другие объекты, такие как интерактивная веб-форма, могут быть встроены в отображаемую страницу. HTML предоставляет средства для создания заголовков, абзацев, списков, ссылок, цитат и других элементов. Элементы HTML выделяются тегами, записанными с использованием угловых скобок. Такие теги, как <img> и <input>, напрямую вводят контент на страницу. Другие теги, такие как <p>, окружают и оформляют текст внутри себя и могут включать другие теги в качестве подэлементов. Браузеры не отображают HTML-теги, но используют их для интерпретации содержимого страницы.",
+                "Язык XHTML является более строгим вариантом HTML, он следует синтаксису XML и является приложением языка XML в области разметки гипертекста.",
+                "В HTML можно встроить язык программирования JavaScript с помощью тега.",
+                "Также включение CSS в HTML позволяет задавать внешний вид и макет страницы."
+            ]
+        },
+        "js": {
+            "title": "JavaScript",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://ecma-international.org/publications-and-standards/standards/ecma-262/"}
+            ],
+            "logo": "https://logodix.com/logo/374704.png",
+            "description": [
+                "JavaScript (аббр. JS) — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией спецификации ECMAScript (стандарт ECMA-262).",
+                "JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений. Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.",
+                "Основные архитектурные черты: динамическая типизация, слабая типизация, автоматическое управление памятью, прототипное программирование, функции как объекты первого класса.",
+                "На JavaScript оказали влияние многие языки, при разработке была цель сделать язык похожим на Java. Языком JavaScript не владеет какая-либо организация или компания, что отличает его от ряда языков программирования, используемых в веб-разработке.",
+                "Название «JavaScript» является зарегистрированным товарным знаком корпорации Oracle в США."
+            ]
+        },
+        "ts": {
+            "title": "TypeScript",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://www.typescriptlang.org/"}
+            ],
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1280px-Typescript_logo_2020.svg.png",
+            "description": [
+                "TypeScript — язык программирования, представленный Microsoft в 2012 году и позиционируемый как средство разработки веб-приложений, расширяющее возможности JavaScript.",
+                "Разработчиком языка TypeScript является Андерс Хейлсберг, создавший ранее Turbo Pascal, Delphi и C#.",
+                "Спецификации языка открыты и опубликованы в рамках соглашения Open Web Foundation Specification Agreement (OWFa 1.0).",
+                "TypeScript является обратно совместимым с JavaScript и компилируется в последний. Фактически, после компиляции программу на TypeScript можно выполнять в любом современном браузере или использовать совместно с серверной платформой Node.js. Код экспериментального компилятора, транслирующего TypeScript в JavaScript, распространяется под лицензией Apache. Его разработка ведётся в публичном репозитории через сервис GitHub.",
+                "TypeScript отличается от JavaScript возможностью явного статического назначения типов, поддержкой использования полноценных классов (как в традиционных объектно-ориентированных языках), а также поддержкой подключения модулей, что призвано повысить скорость разработки, облегчить читаемость, рефакторинг и повторное использование кода, помочь осуществлять поиск ошибок на этапе разработки и компиляции, и, возможно, ускорить выполнение программ."
+            ]
+        },
+        "css": {
+            "title": "CSS",
+            "links": [
+                {"title": "w3.org/Style/CSS/", "link": "https://www.w3.org/Style/CSS/"},
+                {"title": "drafts.csswg.org", "link": "https://drafts.csswg.org/"}
+            ],
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1024px-CSS3_logo_and_wordmark.svg.png",
+            "description": [
+                "CSS (cascading style sheets, каскадные таблицы стилей) — это язык, который используют, чтобы задать визуальное отображение веб-страницам.",
+                "CSS работает в связке с языком разметки HTML. С его помощью можно: менять цвет и начертание текста, задавать шрифт, раскрашивать кнопки, добавлять к отдельным элементам фон или поля и т.п.",
+                "CSS позволяет разработчикам: сделать веб-страницу привлекательнее, добиться единообразия дизайна на сайте, быстро менять оформление страниц, улучшить адаптивность страниц."
+            ]
+        },
+        "angular": {
+            "title": "Angular",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://angular.dev/"}
+            ],
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/220px-AngularJS_logo.svg.png",
+            "description": [
+
+            ]
+        },
+        "react": {
+            "title": "React",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://ru.react.js.org/"}
+            ],
+            "logo": "https://logodix.com/logo/1658345.png",
+            "description": [
+
+            ]
+        },
+        "vue3": {
+            "title": "Vue 3",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://v3.ru.vuejs.org/ru/"}
+            ],
+            "logo": "https://v3.ru.vuejs.org/logo.png",
+            "description": [
+                "Vue (произносится /vjuː/, примерно как view) - это прогрессивный фреймворк для создания пользовательских интерфейсов. В отличие от фреймворков-монолитов, Vue создавался пригодным для постепенного внедрения. Его ядро в первую очередь решает задачи уровня представления (view), упрощая интеграцию с другими библиотеками и существующими проектами. С другой стороны, Vue полностью подходит и для разработки сложных одностраничных приложений (SPA, Single-Page Applications), если использовать его в комбинации с современными инструментами и дополнительными библиотеками."
+            ]
+        },
+        "racket": {
+            "title": "Racket",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://racket-lang.org/"},
+                {"title": "Оффициальная документация", "link": "https://docs.racket-lang.org/"}
+            ],
+            "logo": "https://racket-lang.org/img/racket-logo.svg",
+            "description": [
+                "Racket (ранее — PLTScheme) — мультипарадигменный язык программирования общего назначения, принадлежащий семейству Lisp/Scheme. Предоставляет среду языково-ориентированное программирование — одно из предназначений racket — создание, разработка и реализация языков программирования. Язык используется в различных контекстах: как скриптовый язык, как язык общего назначения, в обучении информатике, в научных исследованиях.",
+                "Платформа предоставляет пользователю реализацию языка Racket, включая развитую среду выполнения (англ. run time system), различные библиотеки, JIT-компилятор и т. д., а также среду разработки DrRacket (ранее известную, как DrScheme) написанную на Racket. Эта программная среда используется в учебном курсе ProgramByDesign[англ.] Массачусетского технологического института. Основной язык Racket отличает мощная макросистема, позволяющая создавать встраиваемые и предметно-ориентированные языки программирования, языковые конструкции (к примеру, классы и модули) и диалекты Racket с различной семантикой.",
+                "Система является свободным и открытым ПО, распространяемым на условиях LGPL. Расширения и пакеты, написанные сообществом, доступны на PLaneT, веб-дистрибутиве системы."
+            ]
+        },
+        "linux" : {
+            "title": "Linux",
+            "links": [
+                {"title": "Оффициальный сайт", "link": "https://kernel.org/"}
+            ],
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1280px-Tux.svg.png",
+            "description": [
+                "Linux — семейство Unix-подобных операционных систем на базе ядра Linux, включающих тот или иной набор утилит и программ проекта GNU, и, возможно, другие компоненты. Как и ядро Linux, системы на его основе, создаются и распространяются в соответствии с моделью разработки свободного и открытого программного обеспечения. GNU/Linux-системы распространяются в основном бесплатно в виде различных дистрибутивов — в форме, готовой для установки и удобной для сопровождения и обновлений, и имеющих свой набор системных и прикладных компонентов, как свободных, так и проприетарных.",
+                "Появившись как решения вокруг созданного в начале 1990-х годов ядра, уже с начала 2000-х годов системы Linux являются основными для суперкомпьютеров и серверов, расширяется применение их для встраиваемых систем и мобильных устройств, некоторое распространение системы получили и для персональных компьютеров."
+            ]
+        },
+        "colors": {
+            "base_list": [
+                { "strName": "Black", "codeName": "#000000", "rgbName": [0, 0, 0] },
+                { "strName": "Gray", "codeName": "#808080", "rgbName": [128, 128, 128] },
+                { "strName": "Silver", "codeName": "#C0C0C0", "rgbName": [192, 192, 192] },
+                { "strName": "White", "codeName": "#FFFFFF", "rgbName": [255, 255, 255] },
+                { "strName": "Fuchsia", "codeName": "#FF00FF", "rgbName": [255, 0, 255] },
+                { "strName": "Purple", "codeName": "#800080", "rgbName": [128, 0, 128] },
+                { "strName": "Red", "codeName": "#FF0000", "rgbName": [255, 0, 0] },
+                { "strName": "Maroon", "codeName": "#800000", "rgbName": [128, 0, 0] },
+                { "strName": "Yellow", "codeName": "#FFFF00", "rgbName": [255, 255, 0] },
+                { "strName": "Olive", "codeName": "#808000", "rgbName": [128, 128, 0] },
+                { "strName": "Lime", "codeName": "#00FF00", "rgbName": [0, 255, 0] },
+                { "strName": "Green", "codeName": "#008000", "rgbName": [0, 128, 0] },
+                { "strName": "Aqua", "codeName": "#00FFFF", "rgbName": [0, 255, 255] },
+                { "strName": "Teal", "codeName": "#008080", "rgbName": [0, 128, 128] },
+                { "strName": "Blue", "codeName": "#0000FF", "rgbName": [0, 0, 255] },
+                { "strName": "Navy", "codeName": "#000080", "rgbName": [0, 0, 128] }
+            ],
+            "list": [
+                { "strName": "IndianRed", "codeName": "#CD5C5C", "rgbName": [205, 92, 92] },
+                { "strName": "LightCoral", "codeName": "#F08080", "rgbName": [240, 128, 128] },
+                { "strName": "Salmon", "codeName": "#FA8072", "rgbName": [250, 128, 114] },
+                { "strName": "DarkSalmon", "codeName": "#E9967A", "rgbName": [233, 150, 122] },
+                { "strName": "LightSalmon", "codeName": "#FFA07A", "rgbName": [255, 160, 122] },
+                { "strName": "Crimson", "codeName": "#DC143C", "rgbName": [220, 20, 60] },
+                { "strName": "Red", "codeName": "#FF0000", "rgbName": [255, 0, 0] },
+                { "strName": "FireBrick", "codeName": "#B22222", "rgbName": [178, 34, 34] },
+                { "strName": "DarkRed", "codeName": "#8B0000", "rgbName": [139, 0, 0] },
+                { "strName": "Pink", "codeName": "#FFC0CB", "rgbName": [255, 192, 203] },
+                { "strName": "LightPink", "codeName": "#FFB6C1", "rgbName": [255, 182, 193] },
+                { "strName": "HotPink", "codeName": "#FF69B4", "rgbName": [255, 105, 180] },
+                { "strName": "DeepPink", "codeName": "#FF1493", "rgbName": [255, 20, 147] },
+                { "strName": "MediumVioletRed", "codeName": "#C71585", "rgbName": [199, 21, 133] },
+                { "strName": "PaleVioletRed", "codeName": "#DB7093", "rgbName": [219, 112, 147] },
+                { "strName": "LightSalmon", "codeName": "#FFA07A", "rgbName": [255, 160, 122] },
+                { "strName": "Coral", "codeName": "#FF7F50", "rgbName": [255, 127, 80] },
+                { "strName": "Tomato", "codeName": "#FF6347", "rgbName": [255, 99, 71] },
+                { "strName": "OrangeRed", "codeName": "#FF4500", "rgbName": [255, 69, 0] },
+                { "strName": "DarkOrange", "codeName": "#FF8C00", "rgbName": [255, 140, 0] },
+                { "strName": "Orange", "codeName": "#FFA500", "rgbName": [255, 165, 0] },
+                { "strName": "Gold", "codeName": "#FFD700", "rgbName": [255, 215, 0] },
+                { "strName": "Yellow", "codeName": "#FFFF00", "rgbName": [255, 255, 0] },
+                { "strName": "LightYellow", "codeName": "#FFFFE0", "rgbName": [255, 255, 224] },
+                { "strName": "LemonChiffon", "codeName": "#FFFACD", "rgbName": [255, 250, 205] },
+                { "strName": "LightGoldenrodYellow", "codeName": "#FAFAD2", "rgbName": [250, 250, 210] },
+                { "strName": "PapayaWhip", "codeName": "#FFEFD5", "rgbName": [255, 239, 213] },
+                { "strName": "Moccasin", "codeName": "#FFE4B5", "rgbName": [255, 228, 181] },
+                { "strName": "PeachPuff", "codeName": "#FFDAB9", "rgbName": [255, 218, 185] },
+                { "strName": "PaleGoldenrod", "codeName": "#EEE8AA", "rgbName": [238, 232, 170] },
+                { "strName": "Khaki", "codeName": "#F0E68C", "rgbName": [240, 230, 140] },
+                { "strName": "DarkKhaki", "codeName": "#BDB76B", "rgbName": [189, 183, 107] },
+                { "strName": "Lavender", "codeName": "#E6E6FA", "rgbName": [230, 230, 250] },
+                { "strName": "Thistle", "codeName": "#D8BFD8", "rgbName": [216, 191, 216] },
+                { "strName": "Plum", "codeName": "#DDA0DD", "rgbName": [221, 160, 221] },
+                { "strName": "Violet", "codeName": "#EE82EE", "rgbName": [238, 130, 238] },
+                { "strName": "Orchid", "codeName": "#DA70D6", "rgbName": [218, 112, 214] },
+                { "strName": "Fuchsia", "codeName": "#FF00FF", "rgbName": [255, 0, 255] },
+                { "strName": "Magenta", "codeName": "#FF00FF", "rgbName": [255, 0, 255] },
+                { "strName": "MediumOrchid", "codeName": "#BA55D3", "rgbName": [186, 85, 211] },
+                { "strName": "MediumPurple", "codeName": "#9370DB", "rgbName": [147, 112, 219] },
+                { "strName": "BlueViolet", "codeName": "#8A2BE2", "rgbName": [138, 43, 226] },
+                { "strName": "DarkViolet", "codeName": "#9400D3", "rgbName": [148, 0, 211] },
+                { "strName": "DarkOrchid", "codeName": "#9932CC", "rgbName": [153, 50, 204] },
+                { "strName": "DarkMagenta", "codeName": "#8B008B", "rgbName": [139, 0, 139] },
+                { "strName": "Purple", "codeName": "#800080", "rgbName": [128, 0, 128] },
+                { "strName": "Indigo", "codeName": "#4B0082", "rgbName": [75, 0, 130] },
+                { "strName": "SlateBlue", "codeName": "#6A5ACD", "rgbName": [106, 90, 205] },
+                { "strName": "DarkSlateBlue", "codeName": "#483D8B", "rgbName": [72, 61, 139] },
+                { "strName": "Cornsilk", "codeName": "#FFF8DC", "rgbName": [255, 248, 220] },
+                { "strName": "BlanchedAlmond", "codeName": "#FFEBCD", "rgbName": [255, 235, 205] },
+                { "strName": "Bisque", "codeName": "#FFE4C4", "rgbName": [255, 228, 196] },
+                { "strName": "NavajoWhite", "codeName": "#FFDEAD", "rgbName": [255, 222, 173] },
+                { "strName": "Wheat", "codeName": "#F5DEB3", "rgbName": [245, 222, 179] },
+                { "strName": "BurlyWood", "codeName": "#DEB887", "rgbName": [222, 184, 135] },
+                { "strName": "Tan", "codeName": "#D2B48C", "rgbName": [210, 180, 140] },
+                { "strName": "RosyBrown", "codeName": "#BC8F8F", "rgbName": [188, 143, 143] },
+                { "strName": "SandyBrown", "codeName": "#F4A460", "rgbName": [244, 164, 96] },
+                { "strName": "Goldenrod", "codeName": "#DAA520", "rgbName": [218, 165, 32] },
+                { "strName": "DarkGoldenRod", "codeName": "#B8860B", "rgbName": [184, 134, 11] },
+                { "strName": "Peru", "codeName": "#CD853F", "rgbName": [205, 133, 63] },
+                { "strName": "Chocolate", "codeName": "#D2691E", "rgbName": [210, 105, 30] },
+                { "strName": "SaddleBrown", "codeName": "#8B4513", "rgbName": [139, 69, 19] },
+                { "strName": "Sienna", "codeName": "#A0522D", "rgbName": [160, 82, 45] },
+                { "strName": "Brown", "codeName": "#A52A2A", "rgbName": [165, 42, 42] },
+                { "strName": "Maroon", "codeName": "#800000", "rgbName": [128, 0, 0] },
+                { "strName": "GreenYellow", "codeName": "#ADFF2F", "rgbName": [173, 255, 47] },
+                { "strName": "Chartreuse", "codeName": "#7FFF00", "rgbName": [127, 255, 0] },
+                { "strName": "LawnGreen", "codeName": "#7CFC00", "rgbName": [124, 252, 0] },
+                { "strName": "Lime", "codeName": "#00FF00", "rgbName": [0, 255, 0] },
+                { "strName": "LimeGreen", "codeName": "#32CD32", "rgbName": [50, 205, 50] },
+                { "strName": "PaleGreen", "codeName": "#98FB98", "rgbName": [152, 251, 152] },
+                { "strName": "LightGreen", "codeName": "#90EE90", "rgbName": [144, 238, 144] },
+                { "strName": "MediumSpringGreen", "codeName": "#00FA9A", "rgbName": [0, 250, 154] },
+                { "strName": "SpringGreen", "codeName": "#00FF7F", "rgbName": [0, 255, 127] },
+                { "strName": "MediumSeaGreen", "codeName": "#3CB371", "rgbName": [60, 179, 113] },
+                { "strName": "SeaGreen", "codeName": "#2E8B57", "rgbName": [46, 139, 87] },
+                { "strName": "ForestGreen", "codeName": "#228B22", "rgbName": [34, 139, 34] },
+                { "strName": "Green", "codeName": "#008000", "rgbName": [0, 128, 0] },
+                { "strName": "DarkGreen", "codeName": "#006400", "rgbName": [0, 100, 0] },
+                { "strName": "YellowGreen", "codeName": "#9ACD32", "rgbName": [154, 205, 50] },
+                { "strName": "OliveDrab", "codeName": "#6B8E23", "rgbName": [107, 142, 35] },
+                { "strName": "Olive", "codeName": "#808000", "rgbName": [128, 128, 0] },
+                { "strName": "DarkOliveGreen", "codeName": "#556B2F", "rgbName": [85, 107, 47] },
+                { "strName": "MediumAquamarine", "codeName": "#66CDAA", "rgbName": [102, 205, 170] },
+                { "strName": "DarkSeaGreen", "codeName": "#8FBC8F", "rgbName": [143, 188, 143] },
+                { "strName": "LightSeaGreen", "codeName": "#20B2AA", "rgbName": [32, 178, 170] },
+                { "strName": "DarkCyan", "codeName": "#008B8B", "rgbName": [0, 139, 139] },
+                { "strName": "Teal", "codeName": "#008080", "rgbName": [0, 128, 128] },
+                { "strName": "Aqua", "codeName": "#00FFFF", "rgbName": [0, 255, 255] },
+                { "strName": "Cyan", "codeName": "#00FFFF", "rgbName": [0, 255, 255] },
+                { "strName": "LightCyan", "codeName": "#E0FFFF", "rgbName": [224, 255, 255] },
+                { "strName": "PaleTurquoise", "codeName": "#AFEEEE", "rgbName": [175, 238, 238] },
+                { "strName": "Aquamarine", "codeName": "#7FFFD4", "rgbName": [127, 255, 212] },
+                { "strName": "Turquoise", "codeName": "#40E0D0", "rgbName": [64, 224, 208] },
+                { "strName": "MediumTurquoise", "codeName": "#48D1CC", "rgbName": [72, 209, 204] },
+                { "strName": "DarkTurquoise", "codeName": "#00CED1", "rgbName": [0, 206, 209] },
+                { "strName": "CadetBlue", "codeName": "#5F9EA0", "rgbName": [95, 158, 160] },
+                { "strName": "SteelBlue", "codeName": "#4682B4", "rgbName": [70, 130, 180] },
+                { "strName": "LightSteelBlue", "codeName": "#B0C4DE", "rgbName": [176, 196, 222] },
+                { "strName": "PowderBlue", "codeName": "#B0E0E6", "rgbName": [176, 224, 230] },
+                { "strName": "LightBlue", "codeName": "#ADD8E6", "rgbName": [173, 216, 230] },
+                { "strName": "SkyBlue", "codeName": "#87CEEB", "rgbName": [135, 206, 235] },
+                { "strName": "LightSkyBlue", "codeName": "#87CEFA", "rgbName": [135, 206, 250] },
+                { "strName": "DeepSkyBlue", "codeName": "#00BFFF", "rgbName": [0, 191, 255] },
+                { "strName": "DodgerBlue", "codeName": "#1E90FF", "rgbName": [30, 144, 255] },
+                { "strName": "CornflowerBlue", "codeName": "#6495ED", "rgbName": [100, 149, 237] },
+                { "strName": "MediumSlateBlue", "codeName": "#7B68EE", "rgbName": [123, 104, 238] },
+                { "strName": "RoyalBlue", "codeName": "#4169E1", "rgbName": [65, 105, 225] },
+                { "strName": "Blue", "codeName": "#0000FF", "rgbName": [0, 0, 255] },
+                { "strName": "MediumBlue", "codeName": "#0000CD", "rgbName": [0, 0, 205] },
+                { "strName": "DarkBlue", "codeName": "#00008B", "rgbName": [0, 0, 139] },
+                { "strName": "Navy", "codeName": "#000080", "rgbName": [0, 0, 128] },
+                { "strName": "MidnightBlue", "codeName": "#191970", "rgbName": [25, 25, 112] },
+                { "strName": "White", "codeName": "#FFFFFF", "rgbName": [255, 255, 255] },
+                { "strName": "Snow", "codeName": "#FFFAFA", "rgbName": [255, 250, 250] },
+                { "strName": "Honeydew", "codeName": "#F0FFF0", "rgbName": [240, 255, 240] },
+                { "strName": "MintCream", "codeName": "#F5FFFA", "rgbName": [245, 255, 250] },
+                { "strName": "Azure", "codeName": "#F0FFFF", "rgbName": [240, 255, 255] },
+                { "strName": "AliceBlue", "codeName": "#F0F8FF", "rgbName": [240, 248, 255] },
+                { "strName": "GhostWhite", "codeName": "#F8F8FF", "rgbName": [248, 248, 255] },
+                { "strName": "WhiteSmoke", "codeName": "#F5F5F5", "rgbName": [245, 245, 245] },
+                { "strName": "Seashell", "codeName": "#FFF5EE", "rgbName": [255, 245, 238] },
+                { "strName": "Beige", "codeName": "#F5F5DC", "rgbName": [245, 245, 220] },
+                { "strName": "OldLace", "codeName": "#FDF5E6", "rgbName": [253, 245, 230] },
+                { "strName": "FloralWhite", "codeName": "#FFFAF0", "rgbName": [255, 250, 240] },
+                { "strName": "Ivory", "codeName": "#FFFFF0", "rgbName": [255, 255, 240] },
+                { "strName": "AntiqueWhite", "codeName": "#FAEBD7", "rgbName": [250, 235, 215] },
+                { "strName": "Linen", "codeName": "#FAF0E6", "rgbName": [250, 240, 230] },
+                { "strName": "LavenderBlush", "codeName": "#FFF0F5", "rgbName": [255, 240, 245] },
+                { "strName": "MistyRose", "codeName": "#FFE4E1", "rgbName": [255, 228, 225] },
+                { "strName": "Gainsboro", "codeName": "#DCDCDC", "rgbName": [220, 220, 220] },
+                { "strName": "LightGrey", "codeName": "#D3D3D3", "rgbName": [211, 211, 211] },
+                { "strName": "Silver", "codeName": "#C0C0C0", "rgbName": [192, 192, 192] },
+                { "strName": "DarkGray", "codeName": "#A9A9A9", "rgbName": [169, 169, 169] },
+                { "strName": "Gray", "codeName": "#808080", "rgbName": [128, 128, 128] },
+                { "strName": "DimGray", "codeName": "#696969", "rgbName": [105, 105, 105] },
+                { "strName": "", "codeName": "#778899", "rgbName": [119, 136, 153] },
+                { "strName": "", "codeName": "#778899", "rgbName": [119, 136, 153] },
+                { "strName": "SlateGray", "codeName": "#708090", "rgbName": [112, 128, 144] },
+                { "strName": "DarkSlateGray", "codeName": "#2F4F4F", "rgbName": [47, 79, 79] },
+                { "strName": "Black", "codeName": "#000000", "rgbName": [0, 0, 0] }
+            ]
+        }
     }
 }

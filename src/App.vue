@@ -13,12 +13,13 @@
     },
     data() {
       return {
-        GDATA: GDATA,
+        GDATA: GDATA.GLOBAL,
         areaList: GDATA.GLOBAL.areaList,
       }
     },
     provide() {
       return {
+        GDATA: this.GDATA,
         areaList: this.areaList,
       }
     }
