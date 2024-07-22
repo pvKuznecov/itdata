@@ -37,6 +37,53 @@ main {
   min-height: calc(100vh - 8rem);
   padding: 3rem 10vw; }
 
+.iblock {
+  width: 90%;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  -webkit-box-shadow: 4px 4px 35px 0px rgba(34, 60, 80, 0.54);
+  -moz-box-shadow: 4px 4px 35px 0px rgba(34, 60, 80, 0.54);
+  box-shadow: 4px 4px 35px 0px rgba(34, 60, 80, 0.54);
+  text-align: left; }
+
+.iblock_title {
+  background-color: rgb(25, 25, 25);
+  border-radius: 10px .2rem 3rem 10px;
+  color: white;
+  padding: 1rem 1.2rem;
+  &:hover {
+    color: rgb(9, 182, 159); }
+  &:before {
+    content: "▼ "; }
+  }
+
+.iblock_content {
+  display: none;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+
+.iblock_content h1,
+.iblock_content h2,
+.iblock_content h3,
+.iblock_content h4 {
+  text-transform: uppercase;
+  background-color: rgb(25, 25, 25);
+  border-radius: 10px .2rem 3rem 10px;
+  color: white;
+  padding: 1rem 1.1rem; }
+
+.iblock_content table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iblock_content table tr td {
+  padding: 5px 7px; }
+
+
 @media screen and (max-width: 700px) {
   .mainNavItem {
     font-size: .7rem !important;
