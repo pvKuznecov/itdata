@@ -3,38 +3,40 @@
     <ViewtitleComponent :titleName="AGDATA.title" :logoLink="AGDATA.logo" :linksList="AGDATA.links" :description="AGDATA.description"/>
 
     <div class="iblock">
-        <h2>HTML ЦВЕТА</h2>
+        <h2 class="iblock_title" @click="chgVisiblStatus('ibc_1')">таблица цветов (HTML)</h2>
         <p>В данном разделе представлены специальные ключевые слова, которые можно применять для обозначения того или иного цвета на интернет сайтах, и при разработке на языках программирования для Web, таких как HTML, CSS, JavaScript и др.</p>
-        <p>В ранних спецификациях W3C было определено всего 16 ключевых цветов. В более поздних спецификациях дополнительно было определено ещё 130 различных названий цветов. Следующая таблица содержит имена, и образцы цветов, которые ассоциируются с этими именами.</p>
-        <p>Имена цветов в HTML не чувствительны к регистру, и могут записываться в любой форме.</p>
-        <p>Также стоит отметить, что имея 147 различных ключевых слов (17 старых и 130 новых), не все цвета в этом списке уникальны. Некоторые имена обозначают один и тот же цвет. Так, например, и Grey, и Gray обозначают 50-процентный серый цвет #808080, а Magenta — это лишь синоним HTML цвета Fuchsia, и ссылается на шестнадцатеричный код цвета #FF00FF.</p>
-        <br>
-        <h2 style="background-color: rgb(25, 25, 25); color: white; padding: 5px 7px;">Основные цвета</h2>
-        <table>
-            <tr>
-                <th>HTML</th>
-                <th>Имя Цвета</th>
-                <th>HEX	RGB</th>
-            </tr>
-            <tr v-for="item in COLORDATA.base_list" class="row-cols-3" :style="{backgroundColor: item.strName}">
-                <td class="col" style="border-radius: 1rem 0 0 1rem; padding: 5px 7px;">{{item.strName}}</td>
-                <td class="col" style="padding: 5px 7px;">{{item.codeName}}</td>
-                <td class="col"style="border-radius: 0 1rem 1rem 0; padding: 5px 7px;">{{item.rgbName}}</td>
-            </tr>
-        </table>
-        <br><br>
-        <h2 style="background-color: rgb(25, 25, 25); color: white; padding: 5px 7px;">Все цвета</h2>
-        <table>
-            <tr>
-                <th>HTML</th>
-                <th>Имя Цвета</th>
-                <th>HEX	RGB</th>
-            </tr>
-            <tr v-for="item in COLORDATA.list" class="row-cols-3" :style="{backgroundColor: item.strName}">
-                <td class="col" style="border-radius: 1rem 0 0 1rem; padding: 5px 7px;">{{item.strName}}</td>
-                <td class="col" style="padding: 5px 7px;">{{item.codeName}}</td>
-                <td class="col"style="border-radius: 0 1rem 1rem 0; padding: 5px 7px;">{{item.rgbName}}</td>
-            </tr>
-        </table> 	
-</div>
+        <div id="ibc_1" class="iblock_content">
+            <p>В ранних спецификациях W3C было определено всего 16 ключевых цветов. В более поздних спецификациях дополнительно было определено ещё 130 различных названий цветов. Следующая таблица содержит имена, и образцы цветов, которые ассоциируются с этими именами.</p>
+            <p>Имена цветов в HTML не чувствительны к регистру, и могут записываться в любой форме.</p>
+            <p>Также стоит отметить, что имея 147 различных ключевых слов (17 старых и 130 новых), не все цвета в этом списке уникальны. Некоторые имена обозначают один и тот же цвет. Так, например, и Grey, и Gray обозначают 50-процентный серый цвет #808080, а Magenta — это лишь синоним HTML цвета Fuchsia, и ссылается на шестнадцатеричный код цвета #FF00FF.</p>
+            <br>
+            <h2>Основные (ключевые) цвета</h2>
+            <table>
+                <tr class="row-cols-3">
+                    <th class="col">HTML</th>
+                    <th class="col">Наименование</th>
+                    <th class="col">HEX	RGB</th>
+                </tr>
+                <tr v-for="item in COLORDATA.base_list" class="row-cols-3" :style="{backgroundColor: item.strName}">
+                    <td class="col" style="border-radius: 1rem 0 0 1rem;">{{item.strName}}</td>
+                    <td class="col">{{item.codeName}}</td>
+                    <td class="col" style="border-radius: 0 1rem 1rem 0;">{{item.rgbName}}</td>
+                </tr>
+            </table>
+            <br><br>
+            <h2>Все цвета</h2>
+            <table>
+                <tr class="row-cols-3">
+                    <th class="col">HTML</th>
+                    <th class="col">Наименование</th>
+                    <th class="col">HEX	RGB</th>
+                </tr>
+                <tr v-for="item in COLORDATA.list" class="row-cols-3" :style="{backgroundColor: item.strName}">
+                    <td class="col" style="border-radius: 1rem 0 0 1rem;">{{item.strName}}</td>
+                    <td class="col">{{item.codeName}}</td>
+                    <td class="col" style="border-radius: 0 1rem 1rem 0;">{{item.rgbName}}</td>
+                </tr>
+            </table> 	
+        </div>
+    </div>
 </main>

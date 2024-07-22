@@ -22,7 +22,7 @@
         GDATA: this.GDATA,
         areaList: this.areaList,
       }
-    }
+    },
   }
 </script>
 

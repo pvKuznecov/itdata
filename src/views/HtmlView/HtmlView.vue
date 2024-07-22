@@ -14,6 +14,12 @@
             COLORDATA: function () {
                 return this.GDATA.colors;
             },
+        },
+        methods: {
+            chgVisiblStatus(elId) {
+                var el = document.getElementById(elId);
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            }
         }
     }
 </script>
