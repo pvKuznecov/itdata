@@ -5,6 +5,6 @@
         name: "PagetitleComponent",
         props: {
             titleName: String,
-        }
+        },
     }
 </script>
