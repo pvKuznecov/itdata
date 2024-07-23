@@ -31,6 +31,10 @@ const routes = [
     component: HtmlView
   },
   {
+    path: '/html/*#/*',
+    component: HtmlView
+  },
+  {
     path: '/javascript',
     name: 'javascript',
     component: JSView
