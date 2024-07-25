@@ -3,10 +3,16 @@
 <script>
   export default {
     name: "AboutView",
+    inject: ["GDATA"],
     data() {
       return {
         areaName: "О сайте",
       }
+    },
+    computed: {
+        MEGDATA: function () {
+            return this.GDATA.me;
+        },
     },
   }
 </script>
