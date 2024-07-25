@@ -1,8 +1,39 @@
 <PagetitleComponent :titleName="areaName"/>
 <main>
-    <div class="about">
+    <div class="iblock me_bitrix">
+        <h2 class="iblock_title">О ресурсе</h2>
         <p>Данный сайт посвящен различным технологиям и языкам программирования.</p>
         <br>
         <p>В процессе работы мне приходилось многое изучать "с нуля" и искать всю необходимую информацию самостоятельно. Чтобы как-то закрепить это дело, было принято решение - создать данный сайт. Буду очень рад, если данный ресурс хоть как-то поможет Вам с решением проблемы или поставленной задачи.</p>
     </div>
+
+    
+    <br>
+    <div class="iblock me_bitrix">
+        <h2 class="iblock_title">1C Bitrix24</h2>
+        <div class="me_bitrix_resume">
+            <a :href="MEGDATA.bitrix.learning.resume" target="_blank">Ссылка на страницу резюме</a>
+        </div>
+        <br>
+        <h3>Сертификаты о пройденном тестировании</h3>
+        <div class="row">
+            <div class="col-5 col-xs-5 col-sm-5 col-md-4 col-lg-3 me_bitrix_cert" style="min-width: 205px; max-width: 400px;" v-for="item in MEGDATA.bitrix.learning.tests">
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                        <img :src="item.cert_logo" alt="">
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-7 col-lg-7" style="text-align: right;">
+                        <a :href="item.cert_url" style="text-decoration: none;">
+                            {{item.cert_title}}<br>
+                            <i style="font-size: .8rem;">( {{item.cert_date}} )</i><br>
+                            <i style="font-size: .8rem;">{{item.cert_number}}</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
 </main>
+ 
