@@ -340,6 +340,43 @@
                 { "strName": "DarkSlateGray", "codeName": "#2F4F4F", "rgbName": [47, 79, 79] },
                 { "strName": "Black", "codeName": "#000000", "rgbName": [0, 0, 0] }
             ]
+        },
+        "me": {
+            "bitrix": {
+                "learning": {
+                    "resume": "https://dev.1c-bitrix.ru/learning/resume.php?ID=72786336-8141320",
+                    "tests": [
+                        {
+                            "cert_logo": "https://site-cloud-files.bitrix.info/uf/a1e/a1e7ebe24dd391b0f9f131f1d953b7be/BXS-ADM-Base.png",
+                            "cert_url": "https://dev.1c-bitrix.ru/learning/certificate.php?user=8141320&amp;course=35&amp;student=2cf15d63d903724c82000d369e681865",
+                            "cert_title": "Администратор. Базовый",
+                            "cert_number": "LRN-543234-35-709-8141320",
+                            "cert_date": "27 июня 2024"
+                        },
+                        {
+                            "cert_logo": "https://site-cloud-files.bitrix.info/uf/666/666e3302e3d671387bb3f454bc068caf/c02.png",
+                            "cert_url": "https://dev.1c-bitrix.ru/learning/certificate.php?user=8141320&amp;course=57&amp;student=e6d90f4af24148187514b08601204a26",
+                            "cert_title": "Бизнес-процессы",
+                            "cert_number": "LRN-536844-57-179-8141320",
+                            "cert_date": "27 мая 2024"
+                        },
+                        {
+                            "cert_logo": "https://site-cloud-files.bitrix.info/uf/552/552a1df0e8daf886c9462add638cbecc/01.png",
+                            "cert_url": "https://dev.1c-bitrix.ru/learning/certificate.php?user=8141320&amp;course=103&amp;student=62461db8056e6d11e609541ade313d71",
+                            "cert_title": "Многосайтовость",
+                            "cert_number": "LRN-536416-103-219-8141320",
+                            "cert_date": "24 мая 2024"
+                        },
+                        {
+                            "cert_logo": "https://site-cloud-files.bitrix.info/uf/819/819a7ff6fb5a7aaf952c57b2d7427518/BXS-CM.png",
+                            "cert_url": "https://dev.1c-bitrix.ru/learning/certificate.php?user=8141320&amp;course=34&amp;student=aebb7651ccefec71cfbd008a91150162",
+                            "cert_title": "Контент-менеджер",
+                            "cert_number": "LRN-534064-34-653-8141320",
+                            "cert_date": "14 мая 2024"
+                        }
+                    ]
+                }
+            }
         }
     }
 }
