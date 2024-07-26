@@ -1,0 +1,13 @@
+<div class="navigator row">
+    <div v-for="item in navigatorsList" class="col-11 col-xs-11 col-sm-11 col-md-11 col-lg-11 navigator_content">
+        <div class="row">
+            <h3 v-show="item.list.length == 0" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12"><router-link :to="item.link">{{item.strname}}</router-link></h3>
+            <!-- <router-link v-show="item.list.length == 0" :to="item.link" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12"><h3>{{item.strname}}</h3></router-link> -->
+            <h3 v-show="item.list.length > 0" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">{{item.strname}}</h3>
+            <!-- <a v-for="listItem in item.list" v-on:click="this.$router.push(listItem.link)">{{listItem.title}}</a> -->
+            <router-link v-for="listItem in item.list" :to=listItem.link class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 navigator_li_item">
+                {{listItem.title}}
+            </router-link>
+        </div>
+    </div>
+</div>

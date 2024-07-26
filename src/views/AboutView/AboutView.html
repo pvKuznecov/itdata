@@ -19,10 +19,10 @@
         <div class="row">
             <div class="col-5 col-xs-5 col-sm-5 col-md-4 col-lg-3 me_bitrix_cert" style="min-width: 205px; max-width: 400px;" v-for="item in MEGDATA.bitrix.learning.tests">
                 <div class="row">
-                    <div class="col-12 col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
                         <img :src="item.cert_logo" alt="">
                     </div>
-                    <div class="col-12 col-xs-12 col-sm-12 col-md-7 col-lg-7" style="text-align: right;">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
                         <a :href="item.cert_url" style="text-decoration: none;">
                             {{item.cert_title}}<br>
                             <i style="font-size: .8rem;">( {{item.cert_date}} )</i><br>

@@ -14,8 +14,11 @@
             </ul>
         </div>
         <div v-show="upHere" id="tet" class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 nav_areas_desc">
-            <!-- <p v-for="disItem in prepareTxt(discTxt)">{{addhtmlTxtPart("div", disItem)}}</p> -->
             <p v-for="disItem in prepareTxt(discTxt)">{{disItem}}</p>
+        </div>
+        <div v-show="!upHere" class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 nav_areas_desc">
+            <p>Данный сайт посвящен различным технологиям и языкам программирования.</p>
+            <p>В процессе работы мне приходилось многое изучать "с нуля" и искать всю необходимую информацию самостоятельно. Чтобы как-то закрепить это дело, было принято решение - создать данный сайт. Буду очень рад, если данный ресурс хоть как-то поможет Вам с решением проблемы или поставленной задачи.</p>
         </div>
     </div>
 </div>
