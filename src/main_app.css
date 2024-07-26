@@ -61,7 +61,7 @@ main {
   &:hover {
     color: rgb(9, 182, 159); }
   &:before {
-    content: "▼ "; }
+    content: "▼ " !important; }
   }
 
 .iblock_content {
