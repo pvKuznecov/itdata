@@ -69,31 +69,57 @@ main {
   padding-left: .5rem;
   padding-right: .5rem; }
 
-.iblock_content h1,
-.iblock_content h2,
-.iblock_content h3,
-.iblock_content h4 {
+.iblock h1,
+.iblock h2,
+.iblock h3,
+.iblock h4 {
   text-transform: uppercase;
   background-color: rgb(25, 25, 25);
   border-radius: 10px .2rem 3rem 10px;
   color: white;
   padding: 1rem 1.1rem; }
 
-.iblock_content h3,
-.iblock_content h4 {
+.iblock h3,
+.iblock h4 {
   color: white;
   &:before {
-    content: "| "; }
-}
+    content: "| "; } }
+
+.iblock_img_mini-right,
+.iblock_img_mini-left {
+  padding: 5px 5px 0 5px;
+  max-width: 220px;
+  /* max-height: 220px; */
+  border-radius: 1.2rem;
+  font-size: 12px;
+  text-align: center;
+  margin: .5rem;
+  -webkit-box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2); }
+
+.iblock_img_mini-right {
+  float: right; }
+.iblock_img_mini-left {
+  float: left; }
+
+.iblock_img_mini-left img,
+.iblock_img_mini-right img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: .8rem;
+  margin-bottom: 5px; }
+
+.iblock_img_mini-left figcaption,
+.iblock_img_mini-right figcaption {
+  margin-bottom: 5px; }
 
 .iblock_content table {
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 .iblock_content table tr td {
   padding: 5px 7px; }
-
 
 @media screen and (max-width: 700px) {
   .mainNavItem {
