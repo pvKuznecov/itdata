@@ -14,7 +14,12 @@
             </ul>
         </div>
         <div v-show="upHere" id="tet" class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 nav_areas_desc">
-            <p v-for="disItem in prepareTxt(discTxt)">{{disItem}}</p>
+            <p v-for="dItem in discTxt">
+                <p v-if="typeof(dItem) == 'string'">{{dItem}}</p>
+                <ul v-else="typeof(dItem) == 'array'">
+                    <li v-for="liPart in dItem">{{liPart}}</li>
+                </ul>                
+            </p>
         </div>
         <div v-show="!upHere" class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 nav_areas_desc">
             <p>Данный сайт посвящен различным технологиям и языкам программирования.</p>
