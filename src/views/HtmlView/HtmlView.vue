@@ -18,6 +18,9 @@
             COLORDATA: function () {
                 return this.GDATA.colors;
             },
+            TAGSDATA: function () {
+                return this.GDATA.htmltags;
+            }
         },
         methods: {
             chgVisiblStatus(elId) {
