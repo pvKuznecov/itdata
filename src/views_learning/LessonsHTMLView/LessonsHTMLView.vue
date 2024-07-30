@@ -16,5 +16,20 @@
                 return this.GDATA.html;
             }
         },
+        data() {
+            return {
+                exampCode: {
+                    1: [
+                        {
+                            id: 0, code: [
+                                "<strong>Текст между двумя тегами — открывающим и закрывающим.</strong>",
+                                "",
+                                "<a href=\"http://www.example.com\">Здесь элемент содержит атрибут href, то есть гиперссылку.</a>"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
     }
 </script>
