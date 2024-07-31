@@ -12,7 +12,9 @@ import AngularView from '../views/AngularView/AngularView.vue'
 import ReactView from '../views/ReactView/ReactView.vue'
 import Vue3View from '../views/Vue3View/Vue3View.vue'
 import RacketView from '../views/RacketView/RacketView.vue'
+import PHPView from '../views/PHPView/PHPView.vue'
 import LinuxView from '../views/LinuxView/LinuxView.vue'
+
 import LessonsHTMLView from '../views_learning/LessonsHTMLView/LessonsHTMLView.vue'
 import LessonsRacketView from '../views_learning/LessonsRacketView/LessonsRacketView.vue'
 import LessonsBitrixView from '../views_learning/LessonsBitrixView/LessonsBitrixView.vue'
@@ -22,69 +24,23 @@ import LessonsCssView from '../views_learning/LessonsCssView/LessonsCssView.vue'
 import LessonsAngularView from '../views_learning/LessonsAngularView/LessonsAngularView.vue'
 import LessonsReactView from '../views_learning/LessonsRacketView/LessonsRacketView.vue'
 import LessonsVue3View from '../views_learning/LessonsVue3View/LessonsVue3View.vue'
+import LessonsPHPView from '../views_learning/LessonsPHPView/LessonsPHPView.vue'
 import LessonsLinuxView from '../views_learning/LessonsLinuxView/LessonsLinuxView.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/bitrix',
-    name: 'bitrix',
-    component: BitrixView
-  },
-  {
-    path: '/html',
-    name: 'html',
-    component: HtmlView
-  },
-  {
-    path: '/javascript',
-    name: 'javascript',
-    component: JSView
-  },
-  {
-    path: '/typescript',
-    name: 'typescript',
-    component: TSView
-  },
-  {
-    path: '/css',
-    name: 'css',
-    component: CssView
-  },
-  {
-    path: '/js-frameworks',
-    name: 'js-frameworks',
-    component: JsframeworksView
-  },
-  {
-    path: '/angular',
-    name: 'angular',
-    component: AngularView
-  },
-  {
-    path: '/react',
-    name: 'react',
-    component: ReactView
-  },
-  {
-    path: '/vue3',
-    name: 'vue3',
-    component: Vue3View
-  },
-  {
-    path: '/racket',
-    name: 'racket',
-    component: RacketView
-  },
-  {
-    path: '/linux',
-    name: 'linux',
-    component: LinuxView
-  },
+  { path: '/', name: 'home', component: HomeView },
+  { path: '/bitrix', name: 'bitrix', component: BitrixView },
+  { path: '/html', name: 'html', component: HtmlView },
+  { path: '/javascript', name: 'javascript', component: JSView },
+  { path: '/typescript', name: 'typescript', component: TSView },
+  { path: '/css', name: 'css', component: CssView },
+  { path: '/js-frameworks', name: 'js-frameworks', component: JsframeworksView },
+  { path: '/angular', name: 'angular', component: AngularView },
+  { path: '/react', name: 'react', component: ReactView },
+  { path: '/vue3', name: 'vue3', component: Vue3View },
+  { path: '/racket', name: 'racket', component: RacketView },
+  { path: '/php', name:'php', component: PHPView },
+  { path: '/linux', name: 'linux', component: LinuxView },
 
   { path: '/lessons-angular/html', component: HtmlView },
   { path: '/lessons-bitrix/html', component: HtmlView },
@@ -92,6 +48,7 @@ const routes = [
   { path: '/lessons-html/html', component: HtmlView },
   { path: '/lessons-js/html', component: HtmlView },
   { path: '/lessons-linux/html', component: HtmlView },
+  { path: '/lessons-php/html', component: HtmlView },
   { path: '/lessons-racket/html', component: HtmlView },
   { path: '/lessons-react/html', component: HtmlView },
   { path: '/lessons-ts/html', component: HtmlView },  
@@ -103,17 +60,19 @@ const routes = [
   { path: '/lessons-html/about', component: AboutView },
   { path: '/lessons-js/about', component: AboutView },
   { path: '/lessons-linux/about', component: AboutView },
+  { path: '/lessons-php/about', component: AboutView },
   { path: '/lessons-racket/about', component: AboutView },
   { path: '/lessons-react/about', component: AboutView },
   { path: '/lessons-ts/about', component: AboutView },
   { path: '/lessons-vue3/about', component: AboutView },
-  
+
   { path: '/lessons-angular/bitrix', component: BitrixView },
   { path: '/lessons-bitrix/bitrix', component: BitrixView },
   { path: '/lessons-css/bitrix', component: BitrixView },
   { path: '/lessons-html/bitrix', component: BitrixView },
   { path: '/lessons-js/bitrix', component: BitrixView },
   { path: '/lessons-linux/bitrix', component: BitrixView },
+  { path: '/lessons-php/bitrix', component: BitrixView },
   { path: '/lessons-racket/bitrix', component: BitrixView },
   { path: '/lessons-react/bitrix', component: BitrixView },
   { path: '/lessons-ts/bitrix', component: BitrixView },
@@ -125,6 +84,7 @@ const routes = [
   { path: '/lessons-html/javascript', component: JSView },
   { path: '/lessons-js/javascript', component: JSView },
   { path: '/lessons-linux/javascript', component: JSView },
+  { path: '/lessons-php/javascript', component: JSView },
   { path: '/lessons-racket/javascript', component: JSView },
   { path: '/lessons-react/javascript', component: JSView },
   { path: '/lessons-ts/javascript', component: JSView },
@@ -135,51 +95,56 @@ const routes = [
   { path: '/lessons-css/typescript', component: TSView },
   { path: '/lessons-html/typescript', component: TSView },
   { path: '/lessons-js/typescript', component: TSView },
+  { path: '/lessons-php/typescript', component: TSView },
   { path: '/lessons-linux/typescript', component: TSView },
   { path: '/lessons-racket/typescript', component: TSView },
   { path: '/lessons-react/typescript', component: TSView },
   { path: '/lessons-ts/typescript', component: TSView },
   { path: '/lessons-vue3/typescript', component: TSView },
-  
+
   { path: '/lessons-angular/css', component: CssView },
   { path: '/lessons-bitrix/css', component: CssView },
   { path: '/lessons-css/css', component: CssView },
   { path: '/lessons-html/css', component: CssView },
   { path: '/lessons-js/css', component: CssView },
   { path: '/lessons-linux/css', component: CssView },
+  { path: '/lessons-php/css', component: CssView },
   { path: '/lessons-racket/css', component: CssView },
   { path: '/lessons-react/css', component: CssView },
   { path: '/lessons-ts/css', component: CssView },
   { path: '/lessons-vue3/css', component: CssView },
-  
+
   { path: '/lessons-angular/angular', component: AngularView },
   { path: '/lessons-bitrix/angular', component: AngularView },
   { path: '/lessons-css/angular', component: AngularView },
   { path: '/lessons-html/angular', component: AngularView },
   { path: '/lessons-js/angular', component: AngularView },
   { path: '/lessons-linux/angular', component: AngularView },
+  { path: '/lessons-php/angular', component: AngularView },
   { path: '/lessons-racket/angular', component: AngularView },
   { path: '/lessons-react/angular', component: AngularView },
   { path: '/lessons-ts/angular', component: AngularView },
   { path: '/lessons-vue3/angular', component: AngularView },
-  
+
   { path: '/lessons-angular/react', component: ReactView },
   { path: '/lessons-bitrix/react', component: ReactView },
   { path: '/lessons-css/react', component: ReactView },
   { path: '/lessons-html/react', component: ReactView },
   { path: '/lessons-js/react', component: ReactView },
   { path: '/lessons-linux/react', component: ReactView },
+  { path: '/lessons-php/react', component: ReactView },
   { path: '/lessons-racket/react', component: ReactView },
   { path: '/lessons-react/react', component: ReactView },
   { path: '/lessons-ts/react', component: ReactView },
   { path: '/lessons-vue3/react', component: ReactView },
-  
+
   { path: '/lessons-angular/vue3', component: Vue3View },
   { path: '/lessons-bitrix/vue3', component: Vue3View },
   { path: '/lessons-css/vue3', component: Vue3View },
   { path: '/lessons-html/vue3', component: Vue3View },
   { path: '/lessons-js/vue3', component: Vue3View },
   { path: '/lessons-linux/vue3', component: Vue3View },
+  { path: '/lessons-php/vue3', component: Vue3View },
   { path: '/lessons-racket/vue3', component: Vue3View },
   { path: '/lessons-react/vue3', component: Vue3View },
   { path: '/lessons-ts/vue3', component: Vue3View },
@@ -191,23 +156,36 @@ const routes = [
   { path: '/lessons-html/racket', component: RacketView },
   { path: '/lessons-js/racket', component: RacketView },
   { path: '/lessons-linux/racket', component: RacketView },
+  { path: '/lessons-php/racket', component: RacketView },
   { path: '/lessons-racket/racket', component: RacketView },
   { path: '/lessons-react/racket', component: RacketView },
   { path: '/lessons-ts/racket', component: RacketView },
   { path: '/lessons-vue3/racket', component: RacketView },
   
-  
+  { path: '/lessons-angular/php', component: PHPView },
+  { path: '/lessons-bitrix/php', component: PHPView },
+  { path: '/lessons-css/php', component: PHPView },
+  { path: '/lessons-html/php', component: PHPView },
+  { path: '/lessons-js/php', component: PHPView },
+  { path: '/lessons-linux/php', component: PHPView },
+  { path: '/lessons-php/php', component: PHPView },
+  { path: '/lessons-racket/php', component: PHPView },
+  { path: '/lessons-react/php', component: PHPView },
+  { path: '/lessons-ts/php', component: PHPView },
+  { path: '/lessons-vue3/php', component: PHPView },
+
   { path: '/lessons-angular/linux', component: LinuxView },
   { path: '/lessons-bitrix/linux', component: LinuxView },
   { path: '/lessons-css/linux', component: LinuxView },
   { path: '/lessons-html/linux', component: LinuxView },
   { path: '/lessons-js/linux', component: LinuxView },
   { path: '/lessons-linux/linux', component: LinuxView },
+  { path: '/lessons-php/linux', component: LinuxView },
   { path: '/lessons-racket/linux', component: LinuxView },
   { path: '/lessons-react/linux', component: LinuxView },
   { path: '/lessons-ts/linux', component: LinuxView },
   { path: '/lessons-vue3/linux', component: LinuxView },
-  
+
   {
     path: '/lessons-html/:id', component: LessonsHTMLView,
     children: [ { path: '/lessons-html/:id', component: LessonsHTMLView } ]
@@ -247,6 +225,10 @@ const routes = [
   {
     path: '/lessons-racket/:id', component: LessonsRacketView,
     children: [ { path: '/lessons-racket/:id', component: LessonsRacketView } ]
+  },
+  {
+    path: '/lessons-php/:id', component: LessonsPHPView,
+    children: [ { path: '/lessons-PHP/:id', component: LessonsPHPView } ]
   },
   
   {
