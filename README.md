@@ -1,5 +1,7 @@
 # itdata
 
+## No backend, no DB, no hassle - it works!
+
 ## Project setup
 ```
 npm install
