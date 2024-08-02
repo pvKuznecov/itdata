@@ -180,9 +180,14 @@ main {
   padding: 5px 8px; }
 
 @media screen and (max-width: 700px) {
+  main {
+    padding: 2rem 0;
+    font-size: 14px;
+  }
+
   .mainNavItem {
-    font-size: .7rem !important;
-    margin-top: 5px;
+    font-size: 1rem !important;
+    margin-top: 1rem;
   }
   .nav_areas_desc {
     visibility: hidden;
@@ -190,8 +195,33 @@ main {
   .pageTitle {
     visibility: hidden;
   }
+
+  .navigator {
+    min-width: 90vw !important;
+    max-width: 90vw !important;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem !important;
+    position: inherit !important; }
   /* .areaPart {
     max-width: 30vw; } */
+  .iblock {
+    width: 90vw;
+    padding: .5rem;
+  }
+
+  .view_titleBlock {
+    width: 90vw !important;
+    padding: 1rem !important;
+  }
+  
+  .view_titleBlock_links {
+    padding: 3px; }
+  
+  .view_titleBlock_links a {
+    font-size: 14px !important;
+  }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1199px) {
