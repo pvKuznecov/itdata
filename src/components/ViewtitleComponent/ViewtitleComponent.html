@@ -1,20 +1,20 @@
 <div class="row view_titleBlock">
-    <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-10">
+    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="row">
             <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <p v-for="dItem in description">{{dItem}}</p>
             </div>
         </div>
     </div>
-    <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-2 view_titleBlock_info">
-        <div class="row-cols-1">
-            <div class="col">
+    <div class="col-10 col-xs-10 col-sm-12 col-md-12 col-lg-2 view_titleBlock_info">
+        <div class="row">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <img :alt="titleName" :src="logoLink" width="100%" height="100%" />
             </div>
-            <div class="col">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2 style="text-align: center;">{{titleName}}</h2>
             </div>
-            <div class="col view_titleBlock_links">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 view_titleBlock_links">
                 <h3>Ссылки</h3>
                 <ul>
                     <li v-for="linkItem in linksList"><a :href="linkItem.link" target="_blank">{{linkItem.title}}</a></li>
