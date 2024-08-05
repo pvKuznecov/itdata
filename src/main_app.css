@@ -167,7 +167,7 @@ main {
   padding-right: 5px; }
 
 .code_count {
-  color: rgb(25, 25, 25);
+  color: gray;
   border-right: 1px solid lightgray; }
 
 .code_compil {
