@@ -26,6 +26,28 @@
                                 "<br><br>",
                                 "<a href=\"http://www.example.com\">Здесь элемент содержит атрибут href, то есть гиперссылку.</a>"
                             ]
+                        },
+                        {
+                            id: 1, code: [
+                                "<!DOCTYPE html>",
+                                "<html>",
+                                "",
+                                "</html>"
+                            ]
+                        },
+                        {
+                            id: 2, code: [
+                                "<!DOCTYPE html>",
+                                "<html>",
+                                "   <head>",
+                                "      <meta charset=\"utf-8\">",
+                                "      <title>TestProject</title>",
+                                "   </head>",
+                                "   <body>",
+                                "      <div>Моя первая страница HTML5!</div>",
+                                "   </body>",
+                                "</html>"
+                            ]
                         }
                     ]
                 }
