@@ -1,0 +1,82 @@
+<PagetitleComponent :titleName="'Заголовок'"/>
+<main>
+    <NavigatorComponent :navigatorsList="AGDATA.navigator" />
+
+    <div v-show="$route.params.id == 0" class="iblock">
+        <h2 class="iblock_title">Создание инфоблока (API; PHP)</h2>
+        <p>В данном уроке предлагается вариант функции, предназначенной для создания инфоблока, по средствам PHP кода.</p>
+        <div class="code">
+            <table>
+                <tr v-for="(item, index) in exampCode[1][0].code">
+                    <td class="code_count">{{index + 1}}</td>
+                    <td>{{item}}</td>
+                </tr>
+            </table>
+        </div>
+        <p>Разберем, как это дело работает.</p>
+        <p>Функция "<b>AddIBlock()</b>" не требует никаких входящих параметров (<i>этот момент можно менять на свое усмотрение</i>). Результатом ее работы будет создание инфоблока "<b>Документы</b>" в типе инфоблока "<b>Универсальные списки</b>".</p>
+        <p>Определены код типа инфоблока "Универсальные списки" и код создаваемого инфоблока "Документы" (<i><b>$IBType</b> и <b>$IBCode</b></i>).</p>
+        <p>Проверяем наличие уже созданного инфоблока "Документы" (<i><u>если есть - прерываем процесс</u></i>).</p>
+        <p>Определяем массив, содержащий перечень параметров создаваемого инфоблока (<i><b>$IBCONFIG_Document</b></i>). На основе класса CIBlock создаем новый инфоблок, фиксируем его id (<i><b>$NEWID</b></i>).</p>
+        <p>Добавляем свойства инфоблока: "<b>Код</b>", "<b>Описание</b>" и "<b>Ссылка на оригинал</b>" (<i>на основе массива <b>$IBFIELDS_Document</b></i>). Результатом операции создания свойств будет их идентификатор (<i>фиксируем его в <b>$propId</b></i>).</p>
+        <p>Если операция прошла успешно - функция вернет строковое "<b>done</b>", в противном случае - "<b>error</b>".</p>
+    </div>
+
+
+<!-- Bitrix: памятка по типам свойств инфоблока
+Для пользовательских типов свойств нужно указывать еще и USER_TYPE.
+
+Привязка к элементам в виде списка:
+PROPERTY_TYPE => 'E' 
+USER_TYPE => 'EList' 
+
+Дата/Время:
+PROPERTY_TYPE => 'S' 
+USER_TYPE => 'DateTime' 
+
+Привязка к элементам по XML_ID:
+PROPERTY_TYPE => 'S' 
+USER_TYPE => 'ElementXmlID' 
+
+Привязка к файлу на сервере:
+PROPERTY_TYPE => 'S' 
+USER_TYPE => 'FileMan' 
+
+HTML/текст:
+PROPERTY_TYPE => 'S' 
+USER_TYPE => 'HTML' 
+
+Привязка к элементам с автозаполнением:
+PROPERTY_TYPE => 'E' 
+USER_TYPE => 'EAutocomplete' 
+
+Привязка к товарам SKU:
+PROPERTY_TYPE => 'E' 
+USER_TYPE => 'SKU' 
+
+Счетчик:
+PROPERTY_TYPE => 'N' 
+USER_TYPE => 'Sequence' 
+
+Привязка к картам Google Maps:
+PROPERTY_TYPE => 'S' 
+USER_TYPE => 'map_google' 
+
+Привязка к Яндекс.Карте:
+PROPERTY_TYPE => 'S' 
+USER_TYPE => 'map_yandex' 
+
+Видео:
+PROPERTY_TYPE => 'S' 
+USER_TYPE => 'video' 
+
+Привязка к теме форума:
+PROPERTY_TYPE => 'S' 
+USER_TYPE => 'TopicID' 
+
+Привязка к пользователю:
+PROPERTY_TYPE => 'S' 
+USER_TYPE => 'UserID'
+
+"PROPERTY_TYPE" => "S", // Строка -->
+</main>
