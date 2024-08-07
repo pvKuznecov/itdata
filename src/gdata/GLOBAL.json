@@ -124,6 +124,13 @@
                     "strname": "Главная",
                     "link": "/bitrix",
                     "list": []
+                },
+                {
+                    "strname": "Учебный курс",
+                    "link": "",
+                    "list": [
+                        { "title": "Создание иинфоблока (API; PHP)", "link": "/lessons-bitrix/0" }
+                    ]
                 }
             ]
         },

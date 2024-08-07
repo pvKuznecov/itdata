@@ -16,5 +16,73 @@
                 return this.GDATA.bitrix;
             }
         },
+        data() {
+            return {
+                exampCode: {
+                    1: [
+                        {
+                            id: 0, code: [
+                                "//функция создания инфоблока",
+                                "function AddIBlock() {",
+                                "$IBType = \"lists\";   //код целевого типа инфоблока \"Универсальные списки\"",
+                                "$IBCode = \"IB_KEY\";   //код создаваемого инфоблока \"Документы\"",
+                                "",
+                                "//проверка на уникальность",
+                                "$resIBE = CIBlock::GetList(Array(), Array(\"TYPE\" => $IBType, \"CODE\" => $IBCode));",
+                                "if ($ar_resIBE = $resIBE->Fetch()) {",
+                                "return false;",
+                                "} else {",
+                                "$IBCONFIG_Document = array(",
+                                "\"CODE\"=> $IBCode,",
+                                "\"IBLOCK_TYPE_ID\"=> $IBType,",
+                                "\"NAME\"=> \"Документы\",",
+                                "\"ACTIVE\"=> \"Y\",",
+                                "\"SORT\"=> 500,",
+                                "\"DESCRIPTION_TYPE\"=> \"text\",",
+                                "\"RSS_ACTIVE\"=> \"N\",",
+                                "\"INDEX_ELEMENT\"=> \"Y\",",
+                                "\"INDEX_SECTION\"=> \"N\",",
+                                "\"WORKFLOW\"=> \"N\",",
+                                "\"BIZPROC\"=> \"Y\",",
+                                "\"VERSION\"=> 1,",
+                                "\"SITE_ID\"=> \"s1\",",
+                                "\"ELEMENT_NAME\" => \"Документ\",",
+                                "\"ELEMENTS_NAME\" => \"Документы\",",
+                                "\"ELEMENT_ADD\" => \"Добавить документ\",",
+                                "\"ELEMENT_EDIT\" => \"Изменить документ\",",
+                                "\"ELEMENT_DELETE\" => \"Удалить документ\",",
+                                "\"SECTION_NAME\" => \"Раздел\",",
+                                "\"SECTIONS_NAME\" => \"Разделы\",",
+                                "\"SECTION_ADD\" => \"Добавить раздел\",",
+                                "\"SECTION_EDIT\" => \"Изменить раздел\",",
+                                "\"SECTION_DELETE\" => \"Удалить раздел\"",
+                                ");",
+                                "$ib = new CIBlock;",
+                                "",
+                                "$NEWID = $ib->Add($IBCONFIG_Document);   // создаем инфоблок",
+                                "//создаем св-ва",
+                                "$IBFIELDS_Document = array(",
+                                "array(\"NAME\" => \"Код\", \"ACTIVE\" => \"Y\", \"SORT\" => 10, \"CODE\" => \"KOD\", \"PROPERTY_TYPE\" => \"S\", \"FILTRABLE\" => \"Y\", \"IBLOCK_ID\" => $NEWID, \"IS_REQUIRED\" => \"Y\"),",
+                                "array(\"NAME\" => \"Описание\", \"ACTIVE\" => \"Y\", \"SORT\" => 20,  \"CODE\" => \"OPISANIE\", \"PROPERTY_TYPE\" => \"S\", \"FILTRABLE\" => \"Y\", \"IBLOCK_ID\" => $NEWID),",
+                                "array(\"NAME\"=> \"Ссылка на оригинал\", \"ACTIVE\" => \"Y\", \"SORT\" => 30, \"CODE\" => \"SSYLKA_NA_ORIGINAL\", \"PROPERTY_TYPE\" => \"E\", \"FILTRABLE\" => \"Y\", \"IBLOCK_ID\" => $NEWID, \"LINK_IBLOCK_ID\" => $NEWID),",
+                                ");",
+                                "$ibp = new CIBlockProperty;",
+                                "for ($i = 0; $i < count($IBFIELDS_Document); $i++) {",
+                                "$propId = $ibp->Add($IBFIELDS_Document[$i]);",
+                                "}",
+                                "if ($propId > 0) {",
+                                "$result = \"done\";",
+                                "} else {",
+                                "$result = \"error\";",
+                                "}",
+                                "return $result;",
+                                "}",
+                                "}" 
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
     }
 </script>
