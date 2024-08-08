@@ -2,12 +2,25 @@
 <main>
     <NavigatorComponent :navigatorsList="AGDATA.navigator" />
 
-    <div v-show="$route.params.id == 0" class="iblock">
-        <h2 class="iblock_title">Создание инфоблока (API; PHP)</h2>
-        <p>В данном уроке предлагается вариант функции, предназначенной для создания инфоблока, по средствам PHP кода.</p>
+    <div v-show="$route.params.id == 1" class="iblock">
+        <h2 class="iblock_title">Инфоблок: Поиск ID по символьному коду (PHP)</h2>
+        <p>Реализована простейшая функция для поиска ID инфоблока, по его символьному коду (по средствам PHP кода).</p>
         <div class="code">
             <table>
                 <tr v-for="(item, index) in exampCode[1][0].code">
+                    <td class="code_count">{{index + 1}}</td>
+                    <td>{{item}}</td>
+                </tr>
+            </table>
+        </div>   
+    </div>
+
+    <div v-show="$route.params.id == 2" class="iblock">
+        <h2 class="iblock_title">Инфоблок: Создание инфоблока (PHP)</h2>
+        <p>Реализована простейшая функция для создания инфоблока (по средствам PHP кода).</p>
+        <div class="code">
+            <table>
+                <tr v-for="(item, index) in exampCode[2][0].code">
                     <td class="code_count">{{index + 1}}</td>
                     <td>{{item}}</td>
                 </tr>
@@ -20,6 +33,19 @@
         <p>Определяем массив, содержащий перечень параметров создаваемого инфоблока (<i><b>$IBCONFIG_Document</b></i>). На основе класса CIBlock создаем новый инфоблок, фиксируем его id (<i><b>$NEWID</b></i>).</p>
         <p>Добавляем свойства инфоблока: "<b>Код</b>", "<b>Описание</b>" и "<b>Ссылка на оригинал</b>" (<i>на основе массива <b>$IBFIELDS_Document</b></i>). Результатом операции создания свойств будет их идентификатор (<i>фиксируем его в <b>$propId</b></i>).</p>
         <p>Если операция прошла успешно - функция вернет строковое "<b>done</b>", в противном случае - "<b>error</b>".</p>
+    </div>
+
+    <div v-show="$route.params.id == 3" class="iblock">
+        <h2 class="iblock_title">Пользователи: Поиск ID группы по символьному коду (PHP)</h2>
+        <p>Реализована простейшая функция для поиска ID инфоблока, по его символьному коду (по средствам PHP кода).</p>
+        <div class="code">
+            <table>
+                <tr v-for="(item, index) in exampCode[3][0].code">
+                    <td class="code_count">{{index + 1}}</td>
+                    <td>{{item}}</td>
+                </tr>
+            </table>
+        </div>   
     </div>
 
 

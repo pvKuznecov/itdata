@@ -22,7 +22,25 @@
                     1: [
                         {
                             id: 0, code: [
-                                "//функция создания инфоблока",
+                                "function IB_idByKey($IBKey) {",
+                                "$IBId_result = false;",
+                                "",
+                                "if ($IBKey) {",
+                                "$rsSection = CIBlock::GetList(array(\"SORT\" => \"ASC\"), array(\"CODE\" => $IBKey), false, array(\"ID\"));",
+                                "",
+                                "if ($arSection = $rsSection->Fetch()) {",
+                                "$IBId_result = $arSection[\"ID\"];",
+                                "	}",
+                                "	}",
+                                "",
+                                "return $IBId_result;",
+                                "}"
+                            ]
+                        }                 
+                    ],
+                    2: [
+                        {
+                            id: 0, code: [
                                 "function AddIBlock() {",
                                 "$IBType = \"lists\";   //код целевого типа инфоблока \"Универсальные списки\"",
                                 "$IBCode = \"IB_KEY\";   //код создаваемого инфоблока \"Документы\"",
@@ -78,6 +96,26 @@
                                 "return $result;",
                                 "}",
                                 "}" 
+                            ]
+                        }
+                    ],
+                    3: [
+                        {
+                            id: 0, code: [
+                                "// поиск id группы по ее символьному коду",
+                                "function IBG_idByKey($GroupCode) {",
+                                "$IBId_result = false;",
+                                "",
+                                "if ($GroupCode) {",
+                                "$rsSection = CGroup::GetList($by = \"c_sort\", $order = \"asc\", array(\"STRING_ID\"=>$GroupCode));",
+                                "",
+                                "if ($arSection = $rsSection->Fetch()) {",
+                                "$IBId_result = $arSection['ID'];",
+                                "}",
+                                "}",
+                                "",
+                                "return $IBId_result;",
+                                "}"
                             ]
                         }
                     ]
