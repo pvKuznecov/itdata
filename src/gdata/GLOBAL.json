@@ -126,10 +126,18 @@
                     "list": []
                 },
                 {
-                    "strname": "Учебный курс",
+                    "strname": "Пользователи",
                     "link": "",
                     "list": [
-                        { "title": "Создание иинфоблока (API; PHP)", "link": "/lessons-bitrix/0" }
+                        { "title": "Поиск ID группы по символьному коду (PHP)", "link": "/lessons-bitrix/3" }
+                    ]
+                },
+                {
+                    "strname": "Инфоблок:",
+                    "link": "",
+                    "list": [
+                        { "title": "Поиск ID по символьному коду (PHP)", "link": "/lessons-bitrix/1" },
+                        { "title": "Создание инфоблока (PHP)", "link": "/lessons-bitrix/2" }
                     ]
                 }
             ]
