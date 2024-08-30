@@ -2,4 +2,40 @@
 <main>
     <NavigatorComponent :navigatorsList="AGDATA.navigator" />
     <ViewtitleComponent :titleName="AGDATA.title" :logoLink="AGDATA.logo" :linksList="AGDATA.links" :description="AGDATA.description"/>
+
+    <div class="iblock">
+        <h2 class="iblock_title" @click="chgVisiblStatus('ibc_1')">Справочник CSS</h2>
+        <div id="ibc_1" class="iblock_content">
+            <table class="iblock_table">
+                <tr class="iblock_table_header" style="position: sticky; top: 5px;">
+                    <th rowspan="2" style="border-right: 1px solid white;">Наименование</th>
+                    <th rowspan="2" style="border-right: 1px solid white;">Описание</th>
+                    <th rowspan="2" style="border-right: 1px solid white;">Значения</th>
+                    <th colspan="4" style="border-right: 1px solid white;">Версия CSS</th>
+                </tr>
+                <tr class="iblock_table_header" style="position: sticky; top: 32px;">
+                    <th style="border-right: 1px solid white; border-top: 1px solid white; font-size: small;">CSS 1</th>
+                    <th style="border-right: 1px solid white; border-top: 1px solid white; font-size: small;">CSS 2</th>
+                    <th style="border-right: 1px solid white; border-top: 1px solid white; font-size: small;">CSS 2.1</th>
+                    <th style="border-right: 1px solid white; border-top: 1px solid white; font-size: small;">CSS 3</th>
+                </tr>
+                <tr v-for="tagItem in TAGSDATA" class="iblock_table_content">
+                    <td style="border-right: 1px solid rgb(241, 241, 241);">{{tagItem.name}}</td>
+                    <td style="border-right: 1px solid rgb(241, 241, 241); font-size: small;">
+                        <p v-for="infoItem in tagItem.info">{{infoItem}}</p>
+                        <p>
+                            <span v-for="linkItem in tagItem.url">
+                                <a v-bind:href="linkItem" target="_blank">🔗</a> 
+                            </span>
+                        </p>
+                    </td>
+                    <td style="border-right: 1px solid rgb(241, 241, 241); font-size: small;" align="center">
+                        <p v-for="valItem in tagItem.value">{{valItem}}</p>
+                    </td>
+                    <td v-for="versItem in tagItem.version" style="border-right: 1px solid rgb(241, 241, 241);" align="center">{{versItem}}</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
 </main>

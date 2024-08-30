@@ -33,6 +33,41 @@
         <p>Определяем массив, содержащий перечень параметров создаваемого инфоблока (<i><b>$IBCONFIG_Document</b></i>). На основе класса CIBlock создаем новый инфоблок, фиксируем его id (<i><b>$NEWID</b></i>).</p>
         <p>Добавляем свойства инфоблока: "<b>Код</b>", "<b>Описание</b>" и "<b>Ссылка на оригинал</b>" (<i>на основе массива <b>$IBFIELDS_Document</b></i>). Результатом операции создания свойств будет их идентификатор (<i>фиксируем его в <b>$propId</b></i>).</p>
         <p>Если операция прошла успешно - функция вернет строковое "<b>done</b>", в противном случае - "<b>error</b>".</p>
+        <br>
+        <p>
+            <b>Важный момент!</b>
+            <br>
+            Для пользовательских типов свойств нужно указывать еще и USER_TYPE.
+            <div class="code">
+                <table>
+                    <tr><td class="code_count">1</td><td>"PROPERTY_TYPE"=> "E", "USER_TYPE"=> "EList"  //Привязка к элементам в виде списка</td></tr>
+                    <tr><td class="code_count">2</td><td></td></tr>
+                    <tr><td class="code_count">3</td><td>"PROPERTY_TYPE"=> "S", "USER_TYPE"=> "map_google"   //Привязка к картам Google Maps</td></tr>
+                    <tr><td class="code_count">4</td></tr>
+                    <tr><td class="code_count">5</td><td>"PROPERTY_TYPE"=> "S", "USER_TYPE"=> "map_yandex"   //Привязка к Яндекс.Карте</td></tr>
+                    <tr><td class="code_count">6</td></tr>
+                    <tr><td class="code_count">7</td><td>"PROPERTY_TYPE"=> "S", "USER_TYPE"=> "video"   //Видео</td></tr>
+                    <tr><td class="code_count">8</td></tr>
+                    <tr><td class="code_count">9</td><td>"PROPERTY_TYPE"=> "S", "USER_TYPE"=> "TopicID"   //Привязка к теме форума</td></tr>
+                    <tr><td class="code_count">10</td></tr>
+                    <tr><td class="code_count">11</td><td>"PROPERTY_TYPE"=> "S", "USER_TYPE"=> "UserID"   //Привязка к пользователю</td></tr>
+                    <tr><td class="code_count">12</td></tr>
+                    <tr><td class="code_count">13</td><td>"PROPERTY_TYPE"=> "S", "USER_TYPE"=> "DateTime"   //Дата/Время</td></tr>
+                    <tr><td class="code_count">14</td></tr>
+                    <tr><td class="code_count">15</td><td>"PROPERTY_TYPE"=> "S", "USER_TYPE"=> "ElementXmlID"   //Привязка к элементам по XML_ID</td></tr>
+                    <tr><td class="code_count">16</td></tr>
+                    <tr><td class="code_count">17</td><td>"PROPERTY_TYPE"=> "S", "USER_TYPE"=> "FileMan"   //Привязка к файлу на сервереПривязка к файлу на сервере</td></tr>
+                    <tr><td class="code_count">18</td></tr>
+                    <tr><td class="code_count">19</td><td>"PROPERTY_TYPE"=> "S", "USER_TYPE"=> "HTML"   //HTML/текст</td></tr>
+                    <tr><td class="code_count">20</td></tr>
+                    <tr><td class="code_count">21</td><td>"PROPERTY_TYPE"=> "E", "USER_TYPE"=> "EAutocomplete"   //Привязка к элементам с автозаполнением</td></tr>
+                    <tr><td class="code_count">22</td></tr>
+                    <tr><td class="code_count">23</td><td>"PROPERTY_TYPE"=> "E", "USER_TYPE"=> "SKU"   //Привязка к товарам SKU</td></tr>
+                    <tr><td class="code_count">24</td></tr>
+                    <tr><td class="code_count">25</td><td>"PROPERTY_TYPE"=> "N", "USER_TYPE"=> "Sequence"   //Счетчик</td></tr>
+                </table>
+            </div>
+        </p>
     </div>
 
     <div v-show="$route.params.id == 3" class="iblock">
@@ -47,62 +82,4 @@
             </table>
         </div>   
     </div>
-
-
-<!-- Bitrix: памятка по типам свойств инфоблока
-Для пользовательских типов свойств нужно указывать еще и USER_TYPE.
-
-Привязка к элементам в виде списка:
-PROPERTY_TYPE => 'E' 
-USER_TYPE => 'EList' 
-
-Дата/Время:
-PROPERTY_TYPE => 'S' 
-USER_TYPE => 'DateTime' 
-
-Привязка к элементам по XML_ID:
-PROPERTY_TYPE => 'S' 
-USER_TYPE => 'ElementXmlID' 
-
-Привязка к файлу на сервере:
-PROPERTY_TYPE => 'S' 
-USER_TYPE => 'FileMan' 
-
-HTML/текст:
-PROPERTY_TYPE => 'S' 
-USER_TYPE => 'HTML' 
-
-Привязка к элементам с автозаполнением:
-PROPERTY_TYPE => 'E' 
-USER_TYPE => 'EAutocomplete' 
-
-Привязка к товарам SKU:
-PROPERTY_TYPE => 'E' 
-USER_TYPE => 'SKU' 
-
-Счетчик:
-PROPERTY_TYPE => 'N' 
-USER_TYPE => 'Sequence' 
-
-Привязка к картам Google Maps:
-PROPERTY_TYPE => 'S' 
-USER_TYPE => 'map_google' 
-
-Привязка к Яндекс.Карте:
-PROPERTY_TYPE => 'S' 
-USER_TYPE => 'map_yandex' 
-
-Видео:
-PROPERTY_TYPE => 'S' 
-USER_TYPE => 'video' 
-
-Привязка к теме форума:
-PROPERTY_TYPE => 'S' 
-USER_TYPE => 'TopicID' 
-
-Привязка к пользователю:
-PROPERTY_TYPE => 'S' 
-USER_TYPE => 'UserID'
-
-"PROPERTY_TYPE" => "S", // Строка -->
 </main>

@@ -238,9 +238,10 @@
             "links": [
                 {"title": "Оффициальный сайт", "link": "https://angular.dev/"}
             ],
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/220px-AngularJS_logo.svg.png",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Angular_gradient.png/1280px-Angular_gradient.png",
             "description": [
-
+                "Angular - это бесплатный и открытый фреймворк, разработанный на основе TypeScript компанией Google и сообществом отдельных лиц.",
+                "Экосистема \"Angular\" состоит из разнообразной группы из более чем 1,7 миллиона разработчиков и авторов библиотек. Согласно опросу разработчиков Stack Overflow, Angular является одним из наиболее часто используемых веб-фреймворков (похожим на React)."
             ],
             "navigator": [
                 {
@@ -257,7 +258,8 @@
             ],
             "logo": "https://logodix.com/logo/1658345.png",
             "description": [
-
+                "React - фреймворк / JavaScript-библиотека с открытым исходным кодом, предназначенная для разработки пользовательских интерфейсов. Он разрабатывается и поддерживается \"Facebook\", \"Instagram\" и сообществом отдельных разработчиков и корпораций.",
+                "React может использоваться как для разработки одностраничных, так и для мобильных приложений. Основная цель - предоставление высокой скорости разработки, простоту и легкую масштабируемость. В качестве библиотеки для разработки пользовательских интерфейсов \"React\" часто используется с другими библиотеками, такими как \"MobX\", \"Redux\" и \"GraphQL\"."
             ],
             "navigator": [
                 {
@@ -274,7 +276,8 @@
             ],
             "logo": "https://v3.ru.vuejs.org/logo.png",
             "description": [
-                "Vue (произносится /vjuː/, примерно как view) - это прогрессивный фреймворк для создания пользовательских интерфейсов. В отличие от фреймворков-монолитов, Vue создавался пригодным для постепенного внедрения. Его ядро в первую очередь решает задачи уровня представления (view), упрощая интеграцию с другими библиотеками и существующими проектами. С другой стороны, Vue полностью подходит и для разработки сложных одностраничных приложений (SPA, Single-Page Applications), если использовать его в комбинации с современными инструментами и дополнительными библиотеками."
+                "Vue - это прогрессивный фреймворк для создания пользовательских интерфейсов.",
+                "В отличие от фреймворков-монолитов, Vue создавался пригодным для постепенного внедрения. Его ядро в первую очередь решает задачи уровня представления (view), упрощая интеграцию с другими библиотеками и существующими проектами. С другой стороны, Vue полностью подходит и для разработки сложных одностраничных приложений (SPA, Single-Page Applications), если использовать его в комбинации с современными инструментами и дополнительными библиотеками."
             ],
             "navigator": [
                 {
@@ -635,6 +638,273 @@
             { "tag": "var", "oldInfo": "" , "info": "Определяет переменную.", "browsers": [1,2,3,4,5], "pair": 2},
             { "tag": "video", "oldInfo": "" , "info": "Определяет видео или фильм.", "browsers": [], "pair": 2},
             { "tag": "wbr", "oldInfo": "" , "info": "Определяет возможный разрыв строки.", "browsers": [], "pair": 1}
+        ],
+        "csstags": [
+            { "name": "!important", "version": [ "+", "+", "+", "+" ], "value": [],
+                "url": [ "https://www.w3.org/TR/CSS21/cascade.html#important-rules" ],
+                "info": [
+                    "Используется при подключении собственной таблицы стилей. В случае возникновения противоречий стилей, !important повышает приоритет стиля.",
+                    "При использовании пользовательской таблицы стилей или одновременном применении разного стиля автора и пользователя к одному и тому же селектору, браузер руководствуется следующим алгоритмом:",
+                    "- !important добавлен в авторский стиль — будет применяться стиль автора;",
+                    "- !important добавлен в пользовательский стиль — будет применяться стиль пользователя;",
+                    "- !important нет как в авторском стиле, так и стиле пользователя — будет применяться стиль автора;",
+                    "- !important содержится в авторском стиле и стиле пользователя — будет применяться стиль пользователя."
+                ]
+            },
+            { "name": "background", "version": [ "+", "+", "+", "+" ],
+                "value": [
+                    "Любые комбинации пяти значений, разделяемых между собой пробелом, определяющих стиль фона, в произвольном порядке. Ни одно значение не является обязательным, поэтому неиспользуемые можно опустить.",
+                    "inherit наследует значение у родительского элемента."
+                ],
+                "url": ["http://www.w3.org/TR/CSS21/colors.html#propdef-background"],
+                "info": [
+                    "Универсальное свойство, позволяет установить до пяти характеристик фона. Значения могут идти в любом порядке.",
+                    "В CSS3 допустимо указывать параметры сразу нескольких фонов, перечисляя их через запятую."
+                ]
+            },
+            { "name": "background-attachment", "version": [ "+", "+", "+", "+" ],
+                "value": [ "fixed | scroll | inherit | local" ],
+                "url": [ "http://www.w3.org/TR/CSS21/colors.html#propdef-background-attachment", "http://www.w3.org/TR/css3-background/#the-background-attachment" ],
+                "info": [
+                    "Свойство устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента. Изображение может быть зафиксировано и оставаться неподвижным, либо перемещаться совместно с документом.",
+                    "В CSS3 можно указать несколько значений для ряда фоновых изображений, перечисляя значения через запятую."
+                ]
+            },
+            { "name": "background-clip", "version": [ "-", "-", "-", "+" ],
+                "value": [
+                    "padding-box | border-box | content-box",
+                    "Значений может быть несколько (для каждого из множественных фоновых рисунков), при этом значения разделяются между собой запятой."
+                ],
+                "url": [ "http://www.w3.org/TR/css3-background/#the-background-clip" ],
+                "info": [
+                    "Определяет, как цвет фона или фоновая картинка должна выводиться под границами. Эффект заметен при прозрачных или пунктирных границах."
+                ]
+            },
+            { "name": "background-color", "version": [ "+", "+", "+", "+" ],
+                "value": [ "<цвет> | transparent | inherit" ],
+                "url": [ "http://www.w3.org/TR/CSS21/colors.html#propdef-background-color" ],
+                "info": ["Определяет цвет фона элемента. Это свойство не наследует свойства своего родителя, однако, т.к. начальное значение устанавливается прозрачным, цвет фона дочерних элементов совпадает с цветом фона родительского элемента."]
+            },
+            { "name": "background-image", "version": [ "+", "+", "+", "+" ],
+                "value": [ "url | none | inherit"],
+                "url": [
+                    "http://www.w3.org/TR/CSS21/colors.html#propdef-background-image",
+                    "http://www.w3.org/TR/css3-background/#the-background-image"
+                ],
+                "info": [
+                    "Устанавливает фоновое изображение для элемента. Если одновременно для элемента задан цвет фона, он будет показан, пока фоновая картинка не загрузится полностью. То же произойдет, если изображения не доступны или их показ в браузере отключен. В случае наличия в рисунке прозрачных областей, через них будет проглядывать фоновый цвет.",
+                    "В CSS3 допустимо указывать несколько фоновых изображений, перечисляя их параметры через запятую."
+                ]
+            },
+            { "name": "background-origin", "version": [ "-", "-", "-", "+"],
+                "value": [
+                    "padding-box | border-box | content-box",
+                    "Значений может быть несколько (для каждого из множественных фоновых рисунков), при этом значения разделяются между собой запятой."
+                ],
+                "url": [ "http://www.w3.org/TR/css3-background/#background-origin" ],
+                "info": [
+                    "Данное свойство определяет область позиционирования фонового рисунка.",
+                    "Это свойство не применяется, когда значение background-attachment задано как fixed."
+                ]
+            },
+            { "name": "background-position", "version": [ "+", "+", "+", "+"],
+                "value": [
+                    "У свойства два значения, положение по горизонтали (может быть — left, center, right) и вертикали (может быть — top, center, bottom). Кроме использования ключевых слов положение также можно задавать в процентах, пикселах или других единицах.",
+                    "Если применяются ключевые слова, то порядок их следования не имеет значения, при процентной записи вначале задается положение рисунка по горизонтали, а затем, через пробел, положение по вертикали. Отношение между используемыми ключевыми словами и процентной записью следующее (в скобках указано, где располагается фоновый рисунок относительно контейнера):",
+                    "- top left = left top = 0% 0% (в левом верхнем углу);",
+                    "- top = top center = center top = 50% 0% (по центру вверху);",
+                    "- right top = top right = 100% 0% (в правом верхнем углу);",
+                    "- left = left center = center left = 0% 50% (по левому краю и по центру);",
+                    "- center = center center = 50% 50% (по центру);",
+                    "- right = right center = center right = 100% 50% (по правому краю и по центру);",
+                    "- bottom left = left bottom = 0% 100% (в левом нижнем углу);",
+                    "- bottom = bottom center = center bottom = 50% 100% (по центру внизу);",
+                    "- bottom right = right bottom = 100% 100% (в правом нижнем углу).",
+                    "При inherit значение наследуется у родителя элемента."
+                ],
+                "url": [
+                    "http://www.w3.org/TR/CSS21/colors.html#propdef-background-position",
+                    "http://www.w3.org/TR/css3-background/#the-background-position"
+                ],
+                "info": [
+                    "Задает начальное положение фонового изображения, установленного с помощью свойства background-image.",
+                    "В CSS3 допустимо указывать несколько значений для каждого фона, перечисляя значения через запятую."
+                ]
+            },
+            { "name": "background-repeat", "version": [ ],
+                "value": [ ],
+                "url": [ "" ],
+                "info": [""]
+            },
+            { "name": "background-size", "info": ""},
+            { "name": "border", "info": ""},
+            { "name": "border-bottom", "info": ""},
+            { "name": "border-bottom-color", "info": ""},
+            { "name": "border-bottom-left-radius", "info": ""},
+            { "name": "border-bottom-right-radius", "info": ""},
+            { "name": "border-bottom-style", "info": ""},
+            { "name": "border-bottom-width", "info": ""},
+            { "name": "border-collapse", "info": ""},
+            { "name": "border-color", "info": ""},
+            { "name": "border-image", "info": ""},
+            { "name": "border-left", "info": ""},
+            { "name": "border-left-color", "info": ""},
+            { "name": "border-left-style", "info": ""},
+            { "name": "border-left-width", "info": ""},
+            { "name": "border-radius", "info": ""},
+            { "name": "border-right", "info": ""},
+            { "name": "border-right-color", "info": ""},
+            {"name": "border-right-style", "info": ""},
+            {"name": "border-right-width", "info": ""},
+            {"name": "border-spacing", "info": ""},
+            {"name": "border-style", "info": ""},
+            {"name": "border-top", "info": ""},
+            {"name": "border-top-color", "info": ""},
+            {"name": "border-top-left-radius", "info": ""},
+            {"name": "border-top-right-radius", "info": ""},
+            {"name": "border-top-style", "info": ""},
+            {"name": "border-top-width", "info": ""},
+            {"name": "border-width", "info": ""},
+            {"name": "bottom", "info": ""},
+            {"name": "box-shadow", "info": ""},
+            {"name": "box-sizing", "info": ""},
+            {"name": "caption-side", "info": ""},
+            {"name": "clear", "info": ""},
+            {"name": "clip", "info": ""},
+            {"name": "color", "info": ""},
+            {"name": "column-count", "info": ""},
+            {"name": "column-gap", "info": ""},
+            {"name": "column-rule", "info": ""},
+            {"name": "column-width", "info": ""},
+            {"name": "columns", "info": ""},
+            {"name": "content", "info": ""},
+            {"name": "counter-increment", "info": ""},
+            {"name": "counter-reset", "info": ""},
+            {"name": "cursor", "info": ""},
+            { "name": "direction", "version": [ "-", "+", "+", "+" ],
+                "value": [ "ltr | rtl | inherit" ],
+                "url": [ "http://www.w3.org/TR/CSS21/visuren.html#propdef-direction" ],
+                "info": [
+                    "Свойство предназначено для сайтов, в которых имеет значение направление текста. Например, при использовании арабского алфавита чтение происходит справа налево.",
+                    "Свойство direction достаточно универсально и управляет следующими возможностями:",
+                    "- способ отображения текста в блоке;",
+                    "- порядок колонок в таблице;",
+                    "- позиция полосы прокрутки в блоке;",
+                    "- положение последней висячей строки текстового блока при text-align: justify.",
+                    "Для использования со встроенными элементами, значение свойства unicode-bidi должно быть задано как embed или override."
+                ]
+            },
+            {"name": "display", "info": ""},
+            {"name": "empty-cells", "info": ""},
+            {"name": "float", "info": ""},
+            {"name": "font", "info": ""},
+            {"name": "font-family", "info": ""},
+            {"name": "font-size", "info": ""},
+            {"name": "font-stretch", "info": ""},
+            {"name": "font-style", "info": ""},
+            {"name": "font-variant", "info": ""},
+            {"name": "font-weight", "info": ""},
+            { "name": "height", "version": [ "+", "+", "+", "+" ],
+                "value": [ "В качестве значений принимаются любые единицы длины, принятые в CSS — например, пикселы (px), дюймы (in), пункты (pt) и др. При использовании процентной записи высота элемента вычисляется в зависимости от высоты родительского элемента. Если родитель явно не указан, то в его качестве выступает окно браузера. auto устанавливает высоту исходя из содержимого элемента." ],
+                "url": [ "http://www.w3.org/TR/CSS21/visudet.html#propdef-height" ],
+                "info": [
+                    "Устанавливает высоту блочных или заменяемых элементов (например тег <img>). Высота не включает толщину границ вокруг элемента, значение отступов и полей.",
+                    "Если содержимое блока превышает указанную высоту, то высота элемента останется неизменной, а содержимое будет отображаться поверх него. Из-за этой особенности может получиться наложение содержимого элементов друг на друга, когда элементы в коде HTML идут последовательно. Чтобы этого избежать, следует добавить overflow: auto к стилю элемента."
+                ]
+            },
+            {"name": "left", "info": ""},
+            {"name": "letter-spacing", "info": ""},
+            {"name": "line-height", "info": ""},
+            {"name": "list-style", "info": ""},
+            {"name": "list-style-image", "info": ""},
+            {"name": "list-style-position", "info": ""},
+            {"name": "list-style-type", "info": ""},
+            {"name": "margin", "info": ""},
+            {"name": "margin-bottom", "info": ""},
+            {"name": "margin-left", "info": ""},
+            {"name": "margin-right", "info": ""},
+            {"name": "margin-top", "info": ""},
+            {"name": "max-height", "info": ""},
+            {"name": "max-width", "info": ""},
+            {"name": "min-height", "info": ""},
+            {"name": "min-width", "info": ""},
+            {"name": "opacity", "info": ""},
+            {"name": "orphans", "info": ""},
+            {"name": "outline", "info": ""},
+            {"name": "outline-color", "info": ""},
+            {"name": "outline-offset", "info": ""},
+            {"name": "outline-style", "info": ""},
+            {"name": "outline-width", "info": ""},
+            {"name": "overflow", "info": ""},
+            {"name": "overflow-x", "info": ""},
+            {"name": "overflow-y", "info": ""},
+            {"name": "padding", "info": ""},
+            {"name": "padding-bottom", "info": ""},
+            {"name": "padding-left", "info": ""},
+            {"name": "padding-right", "info": ""},
+            {"name": "padding-top", "info": ""},
+            {"name": "page-break-after", "info": ""},
+            {"name": "page-break-before", "info": ""},
+            {"name": "page-break-inside", "info": ""},
+            {"name": "position", "info": ""},
+            {"name": "quotes", "info": ""},
+            {"name": "resize", "info": ""},
+            {"name": "right", "info": ""},
+            {"name": "tab-size", "info": ""},
+            {"name": "table-layout", "info": ""},
+            {"name": "text-align", "info": ""},
+            {"name": "text-align-last", "info": ""},
+            {"name": "text-decoration", "info": ""},
+            {"name": "text-decoration-color", "info": ""},
+            {"name": "text-decoration-line", "info": ""},
+            {"name": "text-decoration-style", "info": ""},
+            {"name": "text-indent", "info": ""},
+            {"name": "text-overflow", "info": ""},
+            {"name": "text-shadow", "info": ""},
+            {"name": "text-transform", "info": ""},
+            {"name": "top", "info": ""},
+            {"name": "transform", "info": ""},
+            {"name": "transform-origin", "info": ""},
+            {"name": "transition", "info": ""},
+            {"name": "transition-delay", "info": ""},
+            {"name": "transition-duration", "info": ""},
+            {"name": "transition-property", "info": ""},
+            {"name": "transition-timing-function", "info": ""},
+            {"name": "unicode-bidi", "info": ""},
+            {"name": "vertical-align", "info": ""},
+            {"name": "visibility", "info": ""},
+            {"name": "white-space", "info": ""},
+            {"name": "widows", "info": ""},
+            {"name": "width", "info": ""},
+            {"name": "word-break", "info": ""},
+            {"name": "word-spacing", "info": ""},
+            { "name": "word-wrap", "version": [ "-", "-", "-", "?" ],
+                "value": [ "normal | break-word | inherit" ],
+                "url": [ "http://www.w3.org/TR/css3-text/#word-wrap" ],
+                "info": [
+                    "Свойство указывает, переносить или нет длинные слова, которые не помещаются по ширине в заданную область. Данное свойство носит черновой характер и при валидации документа на CSS3 выдает ошибку."
+                ]
+            },
+            { "name": "writing-mode", "version": [ "-", "-", "-", "+" ],
+                "value": [ "lr-tb | rl-tb | tb-rl | bt-rl | tb-lr | bt-lr" ],
+                "url": [ "http://dev.w3.org/csswg/css3-text-layout/#writing-mode" ],
+                "info": [
+                    "Устанавливает направление текста на странице.",
+                    "Свойство - универсальное. Позволяет одновременно задавать значения свойств direction и block-progression."
+                ]
+            },
+            { "name": "z-index", "version": [ "-", "+", "+", "+" ],
+                "value": [
+                    "<число> | auto | inherit",
+                    "В качестве значения используются целые числа (положительные, отрицательные и ноль). Чем больше значение, тем выше находится элемент по сравнению с теми элементами, у которых оно меньше. При равном значении z-index, на переднем плане находится тот элемент, который в коде HTML описан ниже. Хотя спецификация и разрешает использовать отрицательные значения z-index, но такие элементы не отображаются в браузере Firefox до версии 2.0 включительно.",
+                    "Кроме числовых значений применяется auto — порядок элементов в этом случае строится автоматически, исходя из их положения в коде HTML и принадлежности к родителю, поскольку дочерние элементы имеют тот же номер, что их родительский элемент. Значение inherit указывает, что оно наследуется у родителя."
+                ],
+                "url": [ "http://www.w3.org/TR/CSS21/visuren.html#propdef-z-index" ],
+                "info": [
+                    "Любые позиционированные элементы на веб-странице могут накладываться друг на друга в определенном порядке, имитируя тем самым третье измерение, перпендикулярное экрану.",
+                    "Каждый элемент может находиться как ниже, так и выше других объектов веб-страницы, их размещением по z-оси и управляет z-index. Это свойство работает только для элементов, у которых значение position задано как absolute, fixed или relative."
+                ]
+            }
         ],
         "me": {
             "bitrix": {
