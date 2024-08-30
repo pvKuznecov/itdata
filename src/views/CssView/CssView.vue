@@ -15,6 +15,15 @@
             AGDATA: function () {
                 return this.GDATA.css;
             },
+            TAGSDATA: function () {
+                return this.GDATA.csstags;
+            }
+        },
+        methods: {
+            chgVisiblStatus(elId) {
+                var el = document.getElementById(elId);
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            }
         }
     }
 </script>
