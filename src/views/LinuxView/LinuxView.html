@@ -2,4 +2,22 @@
 <main>
     <NavigatorComponent :navigatorsList="AGDATA.navigator" />
     <ViewtitleComponent :titleName="AGDATA.title" :logoLink="AGDATA.logo" :linksList="AGDATA.links" :description="AGDATA.description"/>
+
+    <div class="iblock">
+        <h2 class="iblock_title" @click="chgVisiblStatus('ibc_1')">Команды Linux: справочник команд Unix / Linux / PuTTY SSH</h2>
+        <div id="ibc_1" class="iblock_content">
+            <p>Большинство UNIX-like систем обладают встроенной справкой, которая подробно описывает все доступные команды. Однако чтобы воспользоваться этой справкой, вы должны знать, по крайней мере, название команды, о которой вы хотите получить информацию. Поскольку большинство пользователей только в общих чертах понимают, что они хотят сделать, то, как правило, встроенная справка мало полезна новичкам.</p>
+            <p>Этот справочник поможет найти соответствующую команду Linux по краткому описанию.</p>
+            <br>
+            <div v-for="comItem in COMMANDSDATA">
+                <h3 style="">{{comItem.title}}</h3>
+                <table style="width: 95%; margin-left: auto; margin-right: auto; margin-bottom: 2rem; -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);">
+                    <tr v-for="selectedCommand in comItem.clist" style="border: 1px solid lightgray;">
+                        <td class="col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3" style="align-items: left;"><b>{{selectedCommand.name}}</b></td>
+                        <td class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9" style="align-items: left; border-left: 1px solid lightgray;">{{selectedCommand.info}}</td>
+                    </tr>
+                </table>                
+            </div>
+        </div>
+    </div>
 </main>
